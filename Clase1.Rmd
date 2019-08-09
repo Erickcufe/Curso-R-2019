@@ -1,0 +1,77 @@
+---
+title: "Clase 1"
+output: pdf_document
+---
+
+# Basicos 
+
+```{r}
+TRUE == TRUE 
+```
+
+## Vectores 
+
+**¿Qúe es un vector?**
+
+La estructura más simple de datos en R. 
+
+`x <- c("a", "b", "c")`
+
+Se puede construir un vector de tipo numérico, lógico o carácter.
+La letra **c** significa "concatenar", y de hecho es un acrónimo para dicha palabra.
+
+Existen cuatro tipos comunes: *logical*, *integer*, *double*, *character* 
+
+**Propiedades de un vector:** 
+
+  1. Tipo
+```{r}
+x <- 1:5
+typeof(x)
+```
+  2. Longitud
+```{r}
+x <- 1:5
+length(x)
+```
+  3. Atributos
+```{r}
+x <- 1:5
+class(x)
+```
+
+**Trabajar con vectores**
+
+En R se indexa la información desde 1, para acceder a la información de una posición especifica de un vector se usan los [ ]. 
+```{r}
+x <- c("Montserrat", "Nidia", "Armando", "Oscar", "Diego")
+x[3]
+```
+```{r}
+x[c(1,2,3)]
+```
+```{r}
+x[1:3]
+```
+```{r}
+x[-3]
+```
+
+Para agregar un valor al vector se debe tomar en cuenta el tipo de vector, si nuestro vector solo contiene caracteres, entonces solo podemos agregar caracteres. *Nota: si indexo con signo negativo, se elimina esa posición* 
+```{r}
+x[6] <- "Fernanda"
+x
+```
+```{r}
+x <- x[-6]
+x
+```
+
+**Ejercicio**
+
+  1. ¿Qué pasa si agrego un número a un vector de caracteres?
+  2. Crea un vector con el nombre *mi_primer_vector* con 10 palabras.  
+
+
+
+   
