@@ -1,0 +1,36 @@
+---
+title: "Requisitos Curso R"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+***
+
+# Descargar e instalar 
+
+
+- R 3.6.1 si es posible https://cran.itam.mx
+- RStudio Desktop 1.2.1335 https://www.rstudio.com/products/rstudio/download/
+- Clone github https://github.com/Erickcufe/Curso-R-2019.git
+- Generar una cuenta en GitHub https://github.com   
+
+Para clonar un repositorio en *R usethis::use_course("Usuario/Repositorio")*
+
+Para clonar un repositorio desde la Terminal *git clone URL.git* 
+
+- Se necesita que descarguen en RStudio *"tidyverse"*, *"devtools"*, *"jsonlite"*. Esto se hace con el comando en Rstudio *install.package("name_of_package")*
+
+***
+# Material del curso 
+
+El material del curso se ira actualizando semana a semana. 
+
+El material del curso tambien se podrá descargar de la pagina https://erickcufe.github.io/teaching.html, donde se pondran las ligas de materiales externos como libros y presentaciones. 
+
+El **contenido** y **horario** dependerá de los intereses de los asistententes del curso. Para los interesados en tomarlo, mandar correo a erickcufe94@gmail.com con copia a man0l0ramaster@gmail.com describiendo ¿por qué? y ¿qué problema esperan resolver con R?, asi como su disponibilidad de tiempo. 
+
+*Para quienes ya mandaron correo hacer caso omiso de lo último.* 
+
+
+
+
