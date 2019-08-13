@@ -128,6 +128,46 @@ my_list_2$Un_data_frame
   
 ## Data.frame
 
-Un data.frame es una lista con el mismo numero de filas o columnas. 
+Un data.frame es una lista con el mismo numero de filas o columnas. Se puede considerar a cada columna como un vector (ya que tienen el mismo tipo de datos) o a cada fila una lista (ya que contiene diferente tipo de datos). 
 
+Ejemplo:
+```{r}
+my_df <- data.frame(
+  Integrantes = c("Nidia", "Monse", "Mont", "Damian"),
+  Sexo = c("Femenino", "Femenino", "Femenino", "Masculino"),
+  Correo = c("nidibelh@gmail.com", 
+             "monserrat.urbina.santana@gmail.com ",
+             "loredoguillen@gmail.com", 
+             "damianae.54@gmail.com"),
+  Velocidad = c(8, 10, 7, 9)
+)
+
+my_df
+```
+
+Para acceder a los datos de un data frame se utiliza **[ , ]**, en la primera posición (antes de la coma) se especifica el numero o numero de filas, nombre o vector de logicos; en la segunda posición se especifica que columnas se quieren; un espacio en blanco significa que tome todos los valores.
+```{r}
+my_df[2,]
+```
+```{r}
+my_df[,3]
+```
+
+¿Por qué sucede esto?
+
+Otra forma de acceder a los datos de un data.frame es con su nombre y el simbolo **$**
+```{r}
+my_df$Integrantes
+```
+
+```{r}
+my_df$Integrantes[3]
+```
+
+
+**Ejercicios**
+
+- Buscar como añadir una columna al data.frame
+- Como poner nombre a las columnas y a las filas 
+- Genera un data.frame con los datos de arriba y añadé dos columnas, una con edad y otra con peso. 
    
