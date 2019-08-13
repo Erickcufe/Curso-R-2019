@@ -72,6 +72,62 @@ x
   1. ¿Qué pasa si agrego un número a un vector de caracteres?
   2. Crea un vector con el nombre *mi_primer_vector* con 10 palabras.  
 
+## Listas
 
+Pueden tener mas de un objeto de diferente clase, es decir, puedo almanecer dentro de la misma lista objetos de clase caracter, factor y numericos, inclusive pueden añardiser data.frame!!! 
+
+```{r}
+my_list <- list(c("a", 1) , c("hola", "como", "estas"), 
+             data.frame(Nombres = c("Nidia", "Mont"), Sexo= c("F", "M")))
+my_list
+```
+
+Para ver la estructura de cualquir tipo de dato se ocupa el comando **str()**
+```{r}
+str(my_list)
+```
+
+¿Cómo se accede a los datos de una lista?
+
+¿Cuál es la diferencia entre los siguientes dos codigos?
+
+```{r}
+my_list[1]
+```
+```{r}
+my_list[[1]]
+```
+
+Con [[]] accedemos al valor (genera un objeto de menor peso de memoria), y con [] accedemos a la posición de la lista. 
+Para obtener el numero 1 de la posicion 1 de mi lista se hace lo siguiente:
+```{r}
+my_list[[1]][2]
+```
+
+Para acceder a la palabra "como" de nuestra lista se hace lo siguiente:
+```{r}
+my_list[[2]][2]
+```
+
+Tambien se puede ocupar el simbolo **$** para acceder a los datos de una lista cuando cada valor tiene un nombre
+```{r}
+my_list_2 <- list(Datos_sin_sentido = c("a", "b", 4, 8), Palabras = c("hola", "como", "estas"), 
+            Un_data_frame = data.frame(Nombres = c("Nidia", "Mont"), Sexo= c("F", "M")))
+
+my_list_2
+```
+
+```{r}
+my_list_2$Un_data_frame
+```
+
+**Ejercicio**
+
+  1. Buscar como agrego y quito valores de una lista
+  2. Crea una lista que contenga en la posición 1 un vector con los nombres de los integrantes de la clase; en la posición 2 un vector con las edades de los integrantes de la clase; en la posición 3 un vector con el sexo de los integrantes de la clase. Poner titulo a cada posición. 
+  
+## Data.frame
+
+Un data.frame es una lista con el mismo numero de filas o columnas. 
 
    
