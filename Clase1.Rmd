@@ -57,7 +57,7 @@ x[1:3]
 x[-3]
 ```
 
-Para agregar un valor al vector se debe tomar en cuenta el tipo de vector, si nuestro vector solo contiene caracteres, entonces solo podemos agregar caracteres. *Nota: si indexo con signo negativo, se elimina esa posición* 
+Para agregar un valor al vector se debe tomar en cuenta el tipo de vector. *Nota: si indexo con signo negativo, se elimina esa posición* 
 ```{r}
 x[6] <- "Fernanda"
 x

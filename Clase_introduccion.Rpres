@@ -17,16 +17,76 @@ Antes de iniciar
 Para clonar un repositorio en *R usethis::use_course("Usuario/Repositorio")*
 Para clonar un repositorio desde la Terminal *git clone URL.git* 
 
-Slide With Code
+RStudio
+========================================================
+# 4 interfaces 
+Editar código, ejecutar código, visualizar, y espacio de datos. 
+
+Puedes acceder a la pagina del curso (https://erickcufe.github.io/teaching.html) para obtener más información de los comandos para usar RStudio con mayor facilidad y rápidez. Asi como libros y comunidades de R.
+
+
+# A poner las reglas
+
+
+
+
+
+Primeros pasos
+========================================================
+Tipos de datos
+
+```{r}
+class(14)
+class("Amarillo")
+class(TRUE)
+class(factor(c("verde", "azul")))
+```
+
+Estructuras basicas para almacenar los datos
+========================================================
+¿Qué es un vector?
+
+¿Qué puede almacenar un vector?
+
+```{r}
+x <- c("a", "b", "c")
+typeof(x)
+length(x)
+class(x)
+```
+
+¿Esto tambien es un vector?
+```{r}
+b <- c(c(1,2,3), c("a","b"))
+```
+
+
+
+Acceder a un vector
 ========================================================
 
 ```{r}
-summary(cars)
+x <- c("Montserrat", "Nidia", "Armando", "Oscar", "Diego")
+x[3]
+x[c(1,2,3)]
+x[1:3]
+x[-3]
+
 ```
 
-Slide With Plot
+Tambien podemos agregar datos a nuestros vectores
+```{r}
+x[6] <- "Fernanda"
+x
+x <- x[-6]
+x
+```
+
+
+Tu turno
 ========================================================
 
-```{r, echo=FALSE}
-plot(cars)
-```
+  1. ¿Qué pasa si agrego un número a un vector de caracteres?
+  2. Crea un vector con el nombre *mi_primer_vector* con 5 datos numericos, 5 logicos y 5 caracteres.
+  3. Selecciona las posiciones 3, 6, 9 de el vector creado
+

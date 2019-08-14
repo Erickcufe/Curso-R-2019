@@ -17,25 +17,160 @@ Antes de iniciar
 Para clonar un repositorio en *R usethis::use_course("Usuario/Repositorio")*
 Para clonar un repositorio desde la Terminal *git clone URL.git* 
 
-Slide With Code
+RStudio
+========================================================
+# 4 interfaces 
+Editar código, ejecutar código, visualizar, y espacio de datos. 
+
+Puedes acceder a la pagina del curso (https://erickcufe.github.io/teaching.html) para obtener más información de los comandos para usar RStudio con mayor facilidad y rápidez. Asi como libros y comunidades de R.
+
+
+# A poner las reglas
+
+
+
+
+
+Primeros pasos
+========================================================
+Tipos de datos
+
+
+```r
+class(14)
+```
+
+```
+[1] "numeric"
+```
+
+```r
+class("Amarillo")
+```
+
+```
+[1] "character"
+```
+
+```r
+class(TRUE)
+```
+
+```
+[1] "logical"
+```
+
+```r
+class(factor(c("verde", "azul")))
+```
+
+```
+[1] "factor"
+```
+
+Estructuras basicas para almacenar los datos
+========================================================
+¿Qué es un vector?
+
+¿Qué puede almacenar un vector?
+
+
+```r
+x <- c("a", "b", "c")
+typeof(x)
+```
+
+```
+[1] "character"
+```
+
+```r
+length(x)
+```
+
+```
+[1] 3
+```
+
+```r
+class(x)
+```
+
+```
+[1] "character"
+```
+
+¿Esto tambien es un vector?
+
+```r
+b <- c(c(1,2,3), c("a","b"))
+```
+
+
+
+Acceder a un vector
 ========================================================
 
 
 ```r
-summary(cars)
+x <- c("Montserrat", "Nidia", "Armando", "Oscar", "Diego")
+x[3]
 ```
 
 ```
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
+[1] "Armando"
 ```
 
-Slide With Plot
+```r
+x[c(1,2,3)]
+```
+
+```
+[1] "Montserrat" "Nidia"      "Armando"   
+```
+
+```r
+x[1:3]
+```
+
+```
+[1] "Montserrat" "Nidia"      "Armando"   
+```
+
+```r
+x[-3]
+```
+
+```
+[1] "Montserrat" "Nidia"      "Oscar"      "Diego"     
+```
+
+Tambien podemos agregar datos a nuestros vectores
+
+```r
+x[6] <- "Fernanda"
+x
+```
+
+```
+[1] "Montserrat" "Nidia"      "Armando"    "Oscar"      "Diego"     
+[6] "Fernanda"  
+```
+
+```r
+x <- x[-6]
+x
+```
+
+```
+[1] "Montserrat" "Nidia"      "Armando"    "Oscar"      "Diego"     
+```
+
+
+Tu turno
 ========================================================
 
-![plot of chunk unnamed-chunk-2](Clase_introduccion-figure/unnamed-chunk-2-1.png)
+  1. ¿Qué pasa si agrego un número a un vector de caracteres?
+  2. Crea un vector con el nombre *mi_primer_vector* con 5 datos numericos, 5 logicos y 5 caracteres.
+  3. Selecciona las posiciones 3, 6, 9 de el vector creado
+
