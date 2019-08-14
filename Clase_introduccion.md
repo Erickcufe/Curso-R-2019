@@ -4,6 +4,9 @@ author: Erick Cuevas
 date: 24 agosto 2019
 autosize: true
 
+
+
+
 Antes de iniciar   
 ========================================================
  **Descargar e instalar** 
@@ -18,6 +21,8 @@ Para clonar un repositorio en *R usethis::use_course("Usuario/Repositorio")*
 Para clonar un repositorio desde la Terminal *git clone URL.git* 
 
 ![Rstudio](cropped-rstudio.png)
+
+
 
 RStudio
 ========================================================
