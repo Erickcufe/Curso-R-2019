@@ -17,6 +17,8 @@ Antes de iniciar
 Para clonar un repositorio en *R usethis::use_course("Usuario/Repositorio")*
 Para clonar un repositorio desde la Terminal *git clone URL.git* 
 
+![Rstudio](cropped-rstudio.png)
+
 RStudio
 ========================================================
 # 4 interfaces 
