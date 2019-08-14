@@ -185,6 +185,7 @@ Tu turno
 
 Data.frame
 ========================================================
+Lista de vectores
 
 Vectores de la misma dimensión conforman un data frame.
 
