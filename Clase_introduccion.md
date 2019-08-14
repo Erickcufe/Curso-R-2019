@@ -281,3 +281,149 @@ my_df[,3]
 
 `my_df[ ,1:3]`
 
+Otro camino 
+========================================================
+
+```r
+my_df <- data.frame(
+  Integrantes = c("Nidia", "Monse", "Mont", "Damian"),
+  Sexo = c("Femenino", "Femenino", "Femenino", "Masculino"),
+  Correo = c("nidibelh@gmail.com", 
+             "monserrat.urbina.santana@gmail.com ",
+             "loredoguillen@gmail.com", 
+             "damianae.54@gmail.com"),
+  Velocidad = c(8, 10, 7, 9)
+)
+
+my_df$Integrantes
+```
+
+```
+[1] Nidia  Monse  Mont   Damian
+Levels: Damian Monse Mont Nidia
+```
+
+```r
+my_df$Integrantes[3]
+```
+
+```
+[1] Mont
+Levels: Damian Monse Mont Nidia
+```
+
+**Ejercicios**
+
+- Buscar como añadir una columna al data.frame
+- Como poner nombre a las columnas y a las filas 
+- Genera un data.frame con los datos de arriba y añadir dos columnas, una con edad y otra con peso. 
+
+Listas
+========================================================
+Formato de datos que nos permite hacer cosas realmente poderosas. 
+Permite tener data.frames y vectores dentro de su estructura, la dimensionalidad **¡no importa!**.
+
+
+```r
+my_list <- list(c("a", 1) , c("hola", "como", "estas"), 
+             data.frame(Nombres = c("Nidia", "Mont"), Sexo= c("F", "M")))
+my_list
+```
+
+```
+[[1]]
+[1] "a" "1"
+
+[[2]]
+[1] "hola"  "como"  "estas"
+
+[[3]]
+  Nombres Sexo
+1   Nidia    F
+2    Mont    M
+```
+
+```r
+str(my_list)
+```
+
+```
+List of 3
+ $ : chr [1:2] "a" "1"
+ $ : chr [1:3] "hola" "como" "estas"
+ $ :'data.frame':	2 obs. of  2 variables:
+  ..$ Nombres: Factor w/ 2 levels "Mont","Nidia": 2 1
+  ..$ Sexo   : Factor w/ 2 levels "F","M": 1 2
+```
+
+```r
+my_list[1]
+```
+
+```
+[[1]]
+[1] "a" "1"
+```
+
+```r
+my_list[[1]]
+```
+
+```
+[1] "a" "1"
+```
+
+```r
+my_list[[1]][2]
+```
+
+```
+[1] "1"
+```
+
+```r
+my_list[[2]][2]
+```
+
+```
+[1] "como"
+```
+
+Con un identificar es mas sencillo 
+========================================================
+
+```r
+my_list_2 <- list(Datos_sin_sentido = c("a", "b", 4, 8), Palabras = c("hola", "como", "estas"), 
+            Un_data_frame = data.frame(Nombres = c("Nidia", "Mont"), Sexo= c("F", "M")))
+
+my_list_2
+```
+
+```
+$Datos_sin_sentido
+[1] "a" "b" "4" "8"
+
+$Palabras
+[1] "hola"  "como"  "estas"
+
+$Un_data_frame
+  Nombres Sexo
+1   Nidia    F
+2    Mont    M
+```
+
+```r
+my_list_2$Un_data_frame
+```
+
+```
+  Nombres Sexo
+1   Nidia    F
+2    Mont    M
+```
+
+**Ejercicio**
+
+  1. Buscar como agrego y quito valores de una lista
+  2. Crea una lista que contenga en la posición 1 un vector con los nombres de los integrantes de la clase; en la posición 2 un vector con las edades de los integrantes de la clase; en la posición 3 un vector con el sexo de los integrantes de la clase; en la pisción 4 un data.frame con nombres, edad y sexo. Poner titulo a cada posición. 
+  
