@@ -27,7 +27,7 @@ Puedes acceder a la pagina del curso (https://erickcufe.github.io/teaching.html)
 
 # A poner las reglas
 
-
+![Rules](rules_1000x800.jpg)
 
 
 
@@ -171,6 +171,8 @@ Tu turno
 ========================================================
 
   1. ¿Qué pasa si agrego un número a un vector de caracteres?
+  
   2. Crea un vector con el nombre *mi_primer_vector* con 5 datos numericos, 5 logicos y 5 caracteres.
+  
   3. Selecciona las posiciones 3, 6, 9 de el vector creado
 
