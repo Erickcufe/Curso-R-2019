@@ -1,6 +1,6 @@
 Clase_introduccion
 ========================================================
-author: Erick Cuevas
+author: Erick Cuevas Fernández / Laboratorio de Biología de Sistemas y Medicina Translacional
 date: 24 agosto 2019
 autosize: true
 
