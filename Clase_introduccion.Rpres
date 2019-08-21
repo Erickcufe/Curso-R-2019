@@ -214,3 +214,13 @@ my_list_2$Un_data_frame
   1. Buscar como agrego y quito valores de una lista
   2. Crea una lista que contenga en la posición 1 un vector con los nombres de los integrantes de la clase; en la posición 2 un vector con las edades de los integrantes de la clase; en la posición 3 un vector con el sexo de los integrantes de la clase; en la pisción 4 un data.frame con nombres, edad y sexo. Poner titulo a cada posición. 
   
+## Extra
+
+**¿Qué es un "tibble"?**
+
+¿Qué estructura de datos consume menos memoria al hacerle cambios?
+
+Elije tu paquetería para exponer
+========================================================
+
+![Tidyverse](tidyverse-logo.png)
