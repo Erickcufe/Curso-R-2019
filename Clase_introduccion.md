@@ -429,7 +429,74 @@ my_list_2$Un_data_frame
 
   1. Buscar como agrego y quito valores de una lista
   2. Crea una lista que contenga en la posición 1 un vector con los nombres de los integrantes de la clase; en la posición 2 un vector con las edades de los integrantes de la clase; en la posición 3 un vector con el sexo de los integrantes de la clase; en la pisción 4 un data.frame con nombres, edad y sexo. Poner titulo a cada posición. 
-  
+
+Otros caminos
+========================================================
+
+```r
+df <- data.frame(x = 1:3, y = 3:1, z = letters[1:3])
+
+df[df$x == 2, ]
+```
+
+```
+  x y z
+2 2 2 b
+```
+
+```r
+df[c(1, 3), ]
+```
+
+```
+  x y z
+1 1 3 a
+3 3 1 c
+```
+
+```r
+df[c("x", "z")]
+```
+
+```
+  x z
+1 1 a
+2 2 b
+3 3 c
+```
+
+```r
+df[, c("x", "z")]
+```
+
+```
+  x z
+1 1 a
+2 2 b
+3 3 c
+```
+
+¿Qué sucede aquí?
+
+
+```r
+str(df["x"])
+```
+
+```
+'data.frame':	3 obs. of  1 variable:
+ $ x: int  1 2 3
+```
+
+```r
+str(df[, "x"])
+```
+
+```
+ int [1:3] 1 2 3
+```
+
+
 ## Extra
 
 **¿Qué es un "tibble"?**

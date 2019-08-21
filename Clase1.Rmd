@@ -168,10 +168,51 @@ my_df$Integrantes
 my_df$Integrantes[3]
 ```
 
+**Otros caminos**
+
+```{r}
+df <- data.frame(x = 1:3, y = 3:1, z = letters[1:3])
+
+df[df$x == 2, ]
+
+```
+
+```{r}
+df[c(1, 3), ]
+
+```
+
+```{r}
+df[c("x", "z")]
+
+```
+
+
+```{r}
+df[, c("x", "z")]
+
+```
+
+
+¿Qué hay de esto?
+
+```{r}
+
+str(df["x"])
+str(df[, "x"])
+
+
+```
+
 
 **Ejercicios**
 
 - Buscar como añadir una columna al data.frame
 - Como poner nombre a las columnas y a las filas 
 - Genera un data.frame con los datos de arriba y añadé dos columnas, una con edad y otra con peso. 
+
+**EXTRA**
+
+- ¿Qué es un tibble?
+- ¿Qué estructura de datos consume menos memoria al hacerle cambios?
    
