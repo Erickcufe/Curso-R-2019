@@ -13,6 +13,10 @@ TRUE == TRUE
 
 **¿Qúe es un vector?**
 
+
+![Vector S3](Class1_2.png)
+
+
 La estructura más simple de datos en R. 
 
 `x <- c("a", "b", "c")`

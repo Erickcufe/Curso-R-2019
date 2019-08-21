@@ -81,6 +81,8 @@ Estructuras basicas para almacenar los datos
 ========================================================
 ¿Qué es un vector?
 
+![Vector S3](Class1_2.png)
+
 ¿Qué puede almacenar un vector?
 
 
