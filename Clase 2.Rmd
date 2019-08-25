@@ -1,0 +1,43 @@
+---
+title: "Clase 2"
+author: "Erick Cuevas Fernández"
+date: "25/8/2019"
+output: pdf_document
+---
+# Documentos csv
+**comma separate values**
+
+*read.csv*
+
+Funciones que leen .csv 
+
+- `read.csv(file_path)`
+- `read_csv(file_path)`
+
+Argumentos de la función 
+
+`read.csv(file, header = TRUE, sep = ",", quote = "\"", dec = ".", fill = TRUE, comment.char = "", ...)`
+
+`read.csv2(file, header = TRUE, sep = ";", quote = "\"", dec = ",", fill = TRUE, comment.char = "", ...)`
+
+Tambien podemos leer archivos separados por estacio y tabuladores:
+
+`read.table(file, header = FALSE, sep = "", quote = "\"'", dec = ".", numerals = c("allow.loss", "warn.loss", "no.loss"), row.names, col.names, as.is = !stringsAsFactors, na.strings = "NA", colClasses = NA, nrows = -1, skip = 0, check.names = TRUE, fill = !blank.lines.skip, strip.white = FALSE, blank.lines.skip = TRUE, comment.char = "#", allowEscapes = FALSE, flush = FALSE, stringsAsFactors = default.stringsAsFactors(), fileEncoding = "", encoding = "unknown", text, skipNul = FALSE)`
+
+`read.delim(file, header = TRUE, sep = "\t", quote = "\"", dec = ".", fill = TRUE, comment.char = "", ...)`
+
+`read.delim2(file, header = TRUE, sep = "\t", quote = "\"", dec = ",", fill = TRUE, comment.char = "", ...)`
+
+```{r}
+
+
+```
+
+
+# Documentos json
+
+# Documentos xml
+
+# Documentos txt
+
+# Documentos SPSS
