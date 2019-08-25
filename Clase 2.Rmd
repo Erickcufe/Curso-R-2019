@@ -1,0 +1,15 @@
+---
+title: "Clase 2"
+author: "Erick Cuevas"
+date: "25/8/2019"
+output: pdf_document
+---
+# Documentos csv
+
+# Documentos json
+
+# Documentos xml
+
+# Documentos txt
+
+# Documentos SPSS
