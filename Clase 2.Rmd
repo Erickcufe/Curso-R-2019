@@ -106,6 +106,37 @@ Attribute Information:
 
 # Documentos json
 
+**.json**
+
+**JavaScript Object Notation**
+
+El tipo de archivo con mayor uso en las bases de datos, ya que consumo muy poco espacio de memoria. La paquetería *jsonlite* nos permite leer este tipo de archivos en R.
+
+```{r}
+library(jsonlite)
+
+```
+
+*fromJSON()*
+
+```{r}
+id <- 681  
+url_chem <- paste0("https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/"
+                   ,id,
+                   "/json")
+
+response <- fromJSON(url_chem)
+
+# str(response)
+
+archivo_sections<-response$Record$Section$Section
+
+```
+
+Desde JSON obtenemos una lista o un data.frame, y ya que sabemos manejar listas, podemos empezar a obtener los datos que deseamos.
+
+
+
 # Documentos xml
 
 # Documentos txt

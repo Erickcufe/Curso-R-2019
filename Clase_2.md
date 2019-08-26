@@ -9,19 +9,19 @@ Tipos de archivos más usados
 
 **.csv**
 
-*read.csv()*
+`read.csv(file, header = TRUE, sep = ",", quote = "\"", dec = ".", fill = TRUE, comment.char = "", ...)`
 
-**.json**
+`read.csv2(file, header = TRUE, sep = ";", quote = "\"", dec = ",", fill = TRUE, comment.char = "", ...)`
 
-*library(jsonlite)*
+**Tambien podemos leer archivos separados por espacio y tabuladores:**
 
-*fromJSON()*
+- `read.table(file, header = FALSE, sep = "", quote = "\"'", dec = ".", numerals = c("allow.loss", "warn.loss", "no.loss"), row.names, col.names, as.is = !stringsAsFactors, na.strings = "NA", colClasses = NA, nrows = -1, skip = 0, check.names = TRUE, fill = !blank.lines.skip, strip.white = FALSE, blank.lines.skip = TRUE, comment.char = "#", allowEscapes = FALSE, flush = FALSE, stringsAsFactors = default.stringsAsFactors(), fileEncoding = "", encoding = "unknown", text, skipNul = FALSE)`
 
-.txt
+- `read.delim(file, header = TRUE, sep = "\t", quote = "\"", dec = ".", fill = TRUE, comment.char = "", ...)`
 
-.xls
+- `read.delim2(file, header = TRUE, sep = "\t", quote = "\"", dec = ",", fill = TRUE, comment.char = "", ...)`
 
-.xml
+
 
 Ejemplo con una base de datos "Heart Diseases Databases"
 ========================================================
@@ -54,6 +54,39 @@ str(data_cleveland)
 ```
 
 
+**Ejercicio:**
 
-Slide With Plot
+Carga los archivos como csv:
+
+- processed.hungarian.data
+- processed.switzerland.data
+- processed.va.data
+
+Una vez caegados, nombra las columnas usando el vector *names_data*
+
+JSON
 ========================================================
+**.json**
+
+
+```r
+library(jsonlite)
+```
+
+*fromJSON()*
+
+
+```r
+id <- 681  
+url_chem <- paste0("https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/"
+                   ,id,
+                   "/json")
+
+response <- fromJSON(url_chem)
+
+# str(response)
+
+archivo_sections<-response$Record$Section$Section
+```
+
+Desde JSON obtenemos una lista o un data.frame, y ya que sabemos manejar listas, podemos empezar a obtener los datos que deseamos.
