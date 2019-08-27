@@ -140,5 +140,11 @@ Desde JSON obtenemos una lista o un data.frame, y ya que sabemos manejar listas,
 # Documentos xml
 
 # Documentos txt
+```{r}
+texto <- readLines("Datasets/ejemplo.txt")
+head(texto)
+
+```
+
 
 # Documentos SPSS

@@ -1,0 +1,80 @@
+Glucose is the long-established, obligatory fuel for brain that fulfills many
+      critical functions, including ATP production, oxidative stress management, and
+      synthesis of neurotransmitters, neuromodulators, and structural components.
+      Neuronal glucose oxidation exceeds that in astrocytes, but both rates increase in
+      direct proportion to excitatory neurotransmission; signaling and metabolism are
+      closely coupled at the local level. Exact details of neuron-astrocyte
+      glutamate-glutamine cycling remain to be established, and the specific roles of
+      glucose and lactate in the cellular energetics of these processes are debated.
+      Glycolysis is preferentially upregulated during brain activation even though
+      oxygen availability is sufficient (aerobic glycolysis). Three major pathways,
+      glycolysis, pentose phosphate shunt, and glycogen turnover, contribute to
+      utilization of glucose in excess of oxygen, and adrenergic regulation of aerobic 
+      glycolysis draws attention to astrocytic metabolism, particularly glycogen
+      turnover, which has a high impact on the oxygen-carbohydrate mismatch. Aerobic
+      glycolysis is proposed to be predominant in young children and specific brain
+      regions, but re-evaluation of data is necessary. Shuttling of glucose- and
+      glycogen-derived lactate from astrocytes to neurons during activation,
+      neurotransmission, and memory consolidation are controversial topics for which
+      alternative mechanisms are proposed. Nutritional therapy and vagus nerve
+      stimulation are translational bridges from metabolism to clinical treatment of
+      diverse brain disorders.
+
+Background: Glial fibrillary acidic protein (GFAP) is a brain-specific astroglial
+      protein that is released into the blood soon after traumatic brain injury by
+      mature astrocytes. S100B is rapidly released into the cerebrospinal fluid and
+      bloodstream after brain damage. We compared the serum concentrations of these
+      proteins in patients with severe head trauma (bleeding and/or fracture) or
+      nontraumatic intracerebral hemorrhage and healthy individuals. Materials and
+      Methods: The study included 63 patients (33 males and 30 females) with traumatic 
+      cerebral hemorrhage and/or cranial bone fractures or nontraumatic cerebral
+      hemorrhage and 30 healthy control subjects. The reasons for attending the
+      emergency department were as follows: fall from a height (n = 32), traffic
+      accident (n = 18), nontraumatic intracerebral hemorrhage (n = 6), animal kick to 
+      the head (n = 4), and blow to the head (n = 3). Results: Of the 63 patients
+      included in the study, 33 (52.4%) were male and 30 (47.6%) were female. Of the 30
+      healthy controls, 12 (40%) were male and 18 (60%) were female. The average age of
+      the patients was 27 years (range, 1 month to 86 years) and the average age of the
+      control group was 21 years (range, 18-30 years). The mean serum GFAP
+      concentrations were 86.37 ng/mL in the patients and 38.07 ng/mL in the controls
+      (P < 0.05). The mean serum S100B concentrations were 428.37 pg/mL in the patients
+      and 103.44 pg/mL in the controls (P < 0.05). Eight (12.7%) patients died in the
+      hospital; of those, the mean GCS score was 4.6, and the mean GFAP and S100B
+      levels were 127.8 ng/mL and 860.6 pg/mL, respectively. Conclusion: The GFAP and
+      S100B concentrations were significantly higher in patients with traumatic or
+      nontraumatic brain injury than in healthy individuals, indicating that serum
+      levels of these biomarkers may provide an alternative to computed tomography for 
+      the diagnosis of brain injury.
+
+Epigenetic annotation studies of genetic risk variants for multiple sclerosis
+      (MS) implicate dysfunctional lymphocytes in MS susceptibility; however, the role 
+      of central nervous system (CNS) cells remains unclear. We investigated the effect
+      of the risk variant, rs7665090(G), located near NFKB1, on astrocytes. We
+      demonstrated that chromatin is accessible at the risk locus, a prerequisite for
+      its impact on astroglial function. The risk variant was associated with increased
+      NF-kappaB signaling and target gene expression, driving lymphocyte recruitment,
+      in cultured human astrocytes and astrocytes within MS lesions, and with increased
+      lesional lymphocytic infiltrates and lesion sizes. Thus, our study establishes a 
+      link between genetic risk for MS (rs7665090(G)) and dysfunctional astrocyte
+      responses associated with increased CNS access for peripheral immune cells. MS
+      may therefore result from variant-driven dysregulation of the peripheral immune
+      system and of the CNS, where perturbed CNS cell function aids in establishing
+      local autoimmune inflammation.
+
+The gap junctions (GJs), which form intercellular communicating channels between 
+      two apposing cells or form hemichannel with extracellular environment, perform
+      crucial functions to maintain small molecule homeostasis. The central nervous
+      system (CNS) GJs are important for maintenance of myelin sheath and neuronal
+      activity. Connexin (Cx) proteins are building blocks of GJs. Recent
+      cell-biological investigations show that amongst the CNS specific Cxs, the most
+      abundant Cx protein, Cx43 and its oligodendrocytic coupling partner Cx47
+      primarily important for maintenance of CNS myelin. Recent investigations
+      elucidate that the expression of Cx43 and Cx47 is very important to maintain K?
+      buffering and nutrient homeostasis in oligodendrocytes, CNS myelin and
+      oligodendrocyte function. The investigations on Multiple Sclerosis (MS) patient
+      samples and EAE hypothesized that the functional loss of Cx43/Cx47 could be
+      associated with spread of chronic MS lesions. Exploring the mechanism of initial 
+      GJ alteration and its effect on demyelination in this model of MS might play a
+      primary role to understand the basis of altered CNS homeostasis, observed during 
+      MS. In this review, we mainly discuss the role of CNS GJs, specifically the
+      Cx43/Cx47 axis in the perspective of demyelination.

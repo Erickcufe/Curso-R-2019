@@ -67,6 +67,29 @@ Datos de todas las formas y colores
 35,1,2,120,308,0,2,180,0,0,?,?,?,0
 35,1,2,150,264,0,0,168,0,0,?,?,?,0
 
+Datos de todas las formas y colores
+========================================================
+Glucose is the long-established, obligatory fuel for brain that fulfills many
+      critical functions, including ATP production, oxidative stress management, and
+      synthesis of neurotransmitters, neuromodulators, and structural components.
+      Neuronal glucose oxidation exceeds that in astrocytes, but both rates increase in
+      direct proportion to excitatory neurotransmission; signaling and metabolism are
+      closely coupled at the local level. Exact details of neuron-astrocyte
+      glutamate-glutamine cycling remain to be established, and the specific roles of
+      glucose and lactate in the cellular energetics of these processes are debated.
+      Glycolysis is preferentially upregulated during brain activation even though
+      oxygen availability is sufficient (aerobic glycolysis). Three major pathways,
+      glycolysis, pentose phosphate shunt, and glycogen turnover, contribute to
+      utilization of glucose in excess of oxygen, and adrenergic regulation of aerobic 
+      glycolysis draws attention to astrocytic metabolism, particularly glycogen
+      turnover, which has a high impact on the oxygen-carbohydrate mismatch. Aerobic
+      glycolysis is proposed to be predominant in young children and specific brain
+      regions, but re-evaluation of data is necessary. Shuttling of glucose- and
+      glycogen-derived lactate from astrocytes to neurons during activation,
+      neurotransmission, and memory consolidation are controversial topics for which
+      alternative mechanisms are proposed. Nutritional therapy and vagus nerve
+      stimulation are translational bridges from metabolism to clinical treatment of
+      diverse brain disorders.
 
 ¿Y esto para que me va a servir?
 ========================================================
@@ -188,3 +211,13 @@ custom_table
 ```
 
 **OJO: este formato esta dejando de ser usado** 
+
+TXT
+========================================================
+```{r}
+texto <- readLines("Datasets/ejemplo.txt")
+head(texto)
+
+```
+
+
