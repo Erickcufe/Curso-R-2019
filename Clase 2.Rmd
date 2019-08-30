@@ -138,6 +138,38 @@ Desde JSON obtenemos una lista o un data.frame, y ya que sabemos manejar listas,
 
 
 # Documentos xml
+**XML** significa Extensible Markup Language (Lenguaje de Marcado Extensible), antes era muy utilizado en las bases de datos, pero progresivamente han ido sustituyendolo por archivos tipo **json**.
+
+Hay multiples paqueterias en R para lidiar con este tipo de archivos, cada una tiene sus especificaciones; este tipo de archivos tienen sus detalles al momento de manejarlos, ya que hay que hacer una serie de pasos para obtener la información de grandes bases de datos; en lo personal recomiendo usar este tipo de archivos solo si es la unica forma de obtener la información. 
+
+Las paqueterias que sirven para tratar estos archivos en R son:
+
+- **XML**
+- **XML2**
+- **httr**
+
+Entre algunos, tiene su arte *parsear* estos documentos.
+
+### Ejemplo
+
+```{r}
+library(XML)
+url<-"Datasets/cd_catalog.xml"
+#xmlParse agrega ubicacion al fichero
+xmldoc<-xmlParse(url)  #XMLInternalDocument 
+#Esto nos coloca en el nodo raiz
+rootnode<-xmlRoot(xmldoc) #Para extraer
+rootnode[1]
+
+#Primera diferencia con CSV es que XML hay que extraer unos por uno los datos
+#Para hacer data.frame con XML, se extrae cada valor del valor raiz
+cds_data<-xmlSApply(rootnode,function(x)xmlSApply(x,xmlValue)) #Recorre todos los nodos y aplica la función, devuelve una matriz con la información del nodo raiz
+#Ahora se procesa un poco, se hace una transposición (t), y especificarle que Row no tiene nombres
+cds.catalog<-data.frame(t(cds_data),row.names=NULL)
+head(cds.catalog,2)
+cds.catalog[1:5,]
+```
+
 
 # Documentos txt
 ```{r}
@@ -145,6 +177,31 @@ texto <- readLines("Datasets/ejemplo.txt")
 head(texto)
 
 ```
+Y desee aqui hay todo un universo de analisis de texto que se puede lograr, desde contar la frecuencia de palabras, desglosar un texto en forma de vector, hacer un analisis de sentimientos del texto, hacer nube de palabras, ect, etc.
+
+Para más información se pueden acercar a mi o estudiar por su cuenta en el libro:
+
+[**Text Mining with R**](https://www.tidytextmining.com/)
 
 
-# Documentos SPSS
+# EXTRA
+
+Con R tambien podemos enlazarnos con otras plataformas para manejar bases de datos como **SQL** y **SPSS**, para acceder a estos datos se usan las paqueterias **"sqldf"** y **"haven"**.
+
+La paquetería **"foreign"** nos permite abrir la extension de los siguientes archivos:
+
+- .arff
+- .dta
+- .mtp
+- .xport
+- .ssd
+- .octave
+- .spss
+- .dbf
+- .epiinfo
+- .systat
+
+
+Y la paquetería **"readxl"** podemos leer archivos que creamos en *Excel*.
+
+
