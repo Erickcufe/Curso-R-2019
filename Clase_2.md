@@ -201,11 +201,11 @@ XML, solo un pequeño ejemplo
 
 ```r
 library(XML)
-url<-"datasets/cd_catalog.xml"
+url <- "Datasets/cd_catalog.xml"
 #xmlParse agrega ubicacion al fichero
-xmldoc<-xmlParse(url)  #XMLInternalDocument 
+xmldoc <- xmlParse(url)  #XMLInternalDocument 
 #Esto nos coloca en el nodo raiz
-rootnode<-xmlRoot(xmldoc) #Para extraer
+rootnode <- xmlRoot(xmldoc) #Para extraer
 rootnode[1]
 ```
 
@@ -227,9 +227,9 @@ attr(,"class")
 ```r
 #Primera diferencia con CSV es que XML hay que extraer unos por uno los datos
 #Para hacer data.frame con XML, se extrae cada valor del valor raiz
-cds_data<-xmlSApply(rootnode,function(x)xmlSApply(x,xmlValue)) #Recorre todos los nodos y aplica la función, devuelve una matriz con la información del nodo raiz
+cds_data <- xmlSApply(rootnode,function(x)xmlSApply(x,xmlValue)) #Recorre todos los nodos y aplica la función, devuelve una matriz con la información del nodo raiz
 #Ahora se procesa un poco, se hace una transposición (t), y especificarle que Row no tiene nombres
-cds.catalog<-data.frame(t(cds_data),row.names=NULL)
+cds.catalog <- data.frame(t(cds_data),row.names=NULL)
 head(cds.catalog,2)
 ```
 
@@ -256,18 +256,18 @@ Otro ejemplo
 ========================================================
 
 ```r
-population_url<-"datasets/WorldPopulation-wiki.htm"
-tables<-readHTMLTable(population_url) #Parsea la pagina web, y nos arroja las tablas de la pagina web
+population_url <- "Datasets/WorldPopulation-wiki.htm"
+tables <- XML::readHTMLTable(population_url) #Parsea la pagina web, y nos arroja las tablas de la pagina web
 
-most_populated<-tables[[6]]
+most_populated <- tables[[6]]
 head(most_populated,3)
 ```
 
 ```
   Rank Country / Territory    Population              Date
-1    1       China[note 4] 1,385,310,000 September 9, 2017
-2    2               India 1,321,010,000 September 9, 2017
-3    3       United States   325,732,000 September 9, 2017
+1    1       China[note 4] 1,385,310,000 September 9, 2017
+2    2               India 1,321,010,000 September 9, 2017
+3    3       United States   325,732,000 September 9, 2017
   Approx. % of world\npopulation Source
 1                          18.3%   [91]
 2                          17.5%   [92]
@@ -275,22 +275,22 @@ head(most_populated,3)
 ```
 
 ```r
-custom_table<-readHTMLTable(population_url,which=6) #Si ya tengo localizada la tabla, me arroja todos los datos de esta
+custom_table <- XML::readHTMLTable(population_url,which=6) #Si ya tengo localizada la tabla, me arroja todos los datos de esta
 custom_table
 ```
 
 ```
    Rank Country / Territory    Population              Date
-1     1       China[note 4] 1,385,310,000 September 9, 2017
-2     2               India 1,321,010,000 September 9, 2017
-3     3       United States   325,732,000 September 9, 2017
-4     4           Indonesia   261,600,000  October 31, 2016
-5     5            Pakistan   208,848,000 September 9, 2017
-6     6              Brazil   207,985,000 September 9, 2017
-7     7             Nigeria   188,500,000  October 31, 2016
-8     8          Bangladesh   163,106,000 September 9, 2017
-9     9              Russia   146,773,226      June 1, 2017
-10   10               Japan   126,750,000      July 1, 2017
+1     1       China[note 4] 1,385,310,000 September 9, 2017
+2     2               India 1,321,010,000 September 9, 2017
+3     3       United States   325,732,000 September 9, 2017
+4     4           Indonesia   261,600,000  October 31, 2016
+5     5            Pakistan   208,848,000 September 9, 2017
+6     6              Brazil   207,985,000 September 9, 2017
+7     7             Nigeria   188,500,000  October 31, 2016
+8     8          Bangladesh   163,106,000 September 9, 2017
+9     9              Russia   146,773,226      June 1, 2017
+10   10               Japan   126,750,000      July 1, 2017
    Approx. % of world\npopulation Source
 1                           18.3%   [91]
 2                           17.5%   [92]
@@ -323,4 +323,13 @@ head(texto)
 [6] "      closely coupled at the local level. Exact details of neuron-astrocyte"            
 ```
 
+Escribiendo mi primer archivos
+========================================================
+**ACTIVIDAD**
 
+- Busca o pregunta a algun compañero como escribir un csv, una vez que ya lo sepas guarda los archivos que generamos de la base de datos de enfermedades del corazón. 
+
+- Descargar el paquete **"readxl"**, cargala y prueba leer un archivo generado en excel a traves de R. 
+
+
+**ENJOY**
