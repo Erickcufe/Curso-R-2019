@@ -151,15 +151,15 @@ library(jsonlite)
 
 ```{r}
 id <- 681  
-url_chem <- paste0("https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/"
-                   ,id,
-                   "/json")
-
-response <- jsonlite::fromJSON(url_chem)
-
-# str(response)
-
-archivo_sections<-response$Record$Section$Section
+# url_chem <- paste0("https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/"
+#                    ,id,
+#                    "/json")
+# 
+# response <- jsonlite::fromJSON(url_chem)
+# 
+# # str(response)
+# 
+# archivo_sections<-response$Record$Section$Section
 ```
 
 Desde JSON obtenemos una lista o un data.frame, y ya que sabemos manejar listas, podemos empezar a obtener los datos que deseamos.

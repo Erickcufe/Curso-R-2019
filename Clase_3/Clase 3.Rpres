@@ -1,0 +1,28 @@
+Clase 3
+========================================================
+author: Erick Cuevas Fernández
+date: 05 septiembre 2019
+autosize: true
+
+Análisis exploratorio de datos
+========================================================
+
+```{r}
+# devtools::install_github("Erickcufe/seekerBio")
+
+cocaine <- seekerBio::seeker_gwas("Cocaine")
+
+# write.csv(cocaine, "Clase_3/Cocaine.csv")
+
+
+
+```
+
+
+Un poco de ggplot 
+========================================================
+
+
+
+========================================================
+
