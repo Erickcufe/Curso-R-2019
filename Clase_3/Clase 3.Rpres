@@ -6,23 +6,56 @@ autosize: true
 
 Análisis exploratorio de datos
 ========================================================
+*Paso 1. Conocer estructura de datos*
+
+*Paso 2. Obtener y leer datos*
+
+**Paso 3. ¿Qué me dicen mis datos?**
 
 ```{r}
 # devtools::install_github("Erickcufe/seekerBio")
 
-cocaine <- seekerBio::seeker_gwas("Cocaine")
+# cocaine <- seekerBio::seeker_gwas("Cocaine")
 
 # write.csv(cocaine, "Clase_3/Cocaine.csv")
 
+# paths <- seekerBio::seeker_gen_pathway(cocaine$GeneSymbol)
 
+# write.csv(paths, "Clase_3/Paths_cocaine.csv")
+
+# Freq <- seekerBio::seeker_snp_freq(cocaine$SNPS)
+
+# write.csv(Freq, "Clase_3/Freq_cocaine.csv")
 
 ```
 
+Para afianzar lo aprendido en la clase anterior:
 
-Un poco de ggplot 
+- Lee/carga el archivo *Cocaine.csv*
+- Lee/carga el archivo *Paths_cocaine.csv*
+- Lee/carga el archivo *Freq_cocaine.csv*
+
+
+Para calentar motores...  Missing Values
 ========================================================
+Un vistazo a los datos
+
+```{r}
+cocaine <- read.csv("Clase_3/Cocaine.csv")
+
+is.na(cocaine)
+
+summary(cocaine)
+
+str(cocaine)
+```
+
 
 
 
 ========================================================
+Ejemplo 2
+
+`ggplot(data = path, aes(x = Path_name, y = pvalue)) + geom_point() +
+  theme_bw()` 
 

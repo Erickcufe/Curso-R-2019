@@ -1,37 +1,48 @@
 Clase 3
 ========================================================
-author: 
-date: 
+author: Erick Cuevas Fernández
+date: 05 septiembre 2019
 autosize: true
 
-First Slide
+Análisis exploratorio de datos
 ========================================================
+*Paso 1. Conocer estructura de datos*
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+*Paso 2. Obtener y leer datos*
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Slide With Code
-========================================================
+**Paso 3. ¿Qué me dicen mis datos?**
 
 
 ```r
-summary(cars)
+# devtools::install_github("Erickcufe/seekerBio")
+
+# cocaine <- seekerBio::seeker_gwas("Cocaine")
+
+# write.csv(cocaine, "Clase_3/Cocaine.csv")
+
+# paths <- seekerBio::seeker_gen_pathway(cocaine$GeneSymbol)
+
+# write.csv(paths, "Clase_3/Paths_cocaine.csv")
+
+# Freq <- seekerBio::seeker_snp_freq(cocaine$SNPS)
+
+# write.csv(Freq, "Clase_3/Freq_cocaine.csv")
 ```
 
-```
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
-```
+Para afianzar lo aprendido en la clase anterior:
 
-Slide With Plot
+- Lee/carga el archivo *Cocaine.csv*
+- Lee/carga el archivo *Paths_cocaine.csv*
+- Lee/carga el archivo *Freq_cocaine.csv*
+
+
+Para calentar motores...  Missing Values
 ========================================================
+Un vistazo a los datos
 
-![plot of chunk unnamed-chunk-2](Clase 3-figure/unnamed-chunk-2-1.png)
+
+
+
+```
+Error in file(file, "rt") : cannot open the connection
+```
