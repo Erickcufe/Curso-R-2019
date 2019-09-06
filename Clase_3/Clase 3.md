@@ -693,3 +693,4 @@ Tarea
 ======================================================== 
 Con los datos de **sleep_disorder.csv** y **Paths_sleep.csv**, ¿qué correlaciones se te ocurren hacer? ¿Cómo juntas los datos de ensanut con los GWAS?
 
+Esta tarea vale por 3,  **ojo** :D
