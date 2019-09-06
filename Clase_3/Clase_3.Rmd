@@ -1,0 +1,9 @@
+---
+title: "Clase 3: Análisis exploratorio"
+output: pdf_document
+author: Erick Cuevas Fernández
+---
+
+# Analisis exploratorio de datos
+
+Analizar datos nos permite tomar mejores decisiones para indagar en eventos de causalidad entre las variables, asi como poder ver la correlación que pudiese existir. Este proceso consiste en la identificación de valores faltantes, imputación, limpieza, y formato. 

@@ -44,7 +44,7 @@ Un vistazo a los datos
 
 
 ```{r}
-sleep_disorder_mx <- read.csv("Seccion_Nutricion/Cuestionario_de_Problemas_de_Suenno/ensanut_suenno_16112016.csv")
+sleep_disorder_mx <- read.csv("/Users/erickCuevas/Documents/GitProyects/Curso-R-2019/Seccion_Nutricion/Cuestionario_de_Problemas_de_Suenno/ensanut_suenno_16112016.csv")
 
 is.na(sleep_disorder_mx)
 
@@ -52,11 +52,10 @@ is.na(sleep_disorder_mx)
 ```
 
 
-
 ========================================================
 Un vistazo a los datos
 ```{r}
-
+summary(sleep_disorder_mx)
 
 ```
 
@@ -64,7 +63,7 @@ Un vistazo a los datos
 Un vistazo a los datos
 
 ```{r}
-
+str(sleep_disorder_mx)
 ```
 
 
