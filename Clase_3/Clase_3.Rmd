@@ -7,3 +7,134 @@ author: Erick Cuevas Fernández
 # Analisis exploratorio de datos
 
 Analizar datos nos permite tomar mejores decisiones para indagar en eventos de causalidad entre las variables, asi como poder ver la correlación que pudiese existir. Este proceso consiste en la identificación de valores faltantes, imputación, limpieza, y formato. 
+
+## Missin Values
+
+Son representados como **NA** (*Not Available*) en R. Es necesario identificarlos ya que interfieren con operaciones exclusivas para cada clase de objeto, ejemplo, ecuaciones o funciones númericas; si hacemos una operación con un **NA** presente, por default el resultado será **NA**. 
+
+Para evitar los **NAs**, se pueden usar las siguientes estrategias:
+
+*Nota: para estos ejemplos solo tomaremos 10 columnas del dataset que cargamos*
+
+```{r}
+starwars <- dplyr::starwars
+starwars$films <- NULL
+starwars$vehicles <- NULL
+starwars$starships <- NULL
+
+is.na(head(starwars))
+```
+
+Con esta función obtenemos un vector de **logico** que podemos usar para seleccionar aquellos valores que sean **NA**. 
+
+Tambien podemos detectar los **NAs** mediante:
+
+```{r}
+summary(starwars)
+str(starwars)
+```
+
+Una vez que los detectamos, podemos limpiarlos selectivamente.
+
+```{r}
+
+#Limpieza selectiva de los datos sin valor 
+#Limpiar NA de solamente la variable gender
+starwars.cleaned<-starwars[!is.na(starwars$gender),]
+#Filas completas para un data frame 
+complete.cases(starwars) #Checa en que altura de fila hay un NA
+starwars.cleaned.2<- starwars[complete.cases(starwars),]
+
+#Convertir algun valor en NA
+starwars$skin_color[starwars$skin_color=="gold"]<-NA
+
+```
+
+Una vez que tenemos solo valores disponibles, es decir, ya no tener **NA**, entonces podemos hacer operaciones y obtener medidas de centralidad, como el siguiente ejemplo:
+
+```{r}
+#Medidas de centralización y dispersión
+mean(starwars$mass) #Devuelve NA porque aun tiene NA
+mean(starwars$mass, na.rm=TRUE) #Quita los NA y nos arroja un resultado
+
+sd(starwars$mass)
+sd(starwars$mass,na.rm=TRUE)
+
+```
+
+
+Si no queremos perder información podriamos sustituir los **NA** por valores promedio. *Ojo aquí pueden existir multiples estrategias de imputacion de valores faltantes, eso no se tomara en cuenta en este capitulo*
+
+```{r}
+#Genera una nueva columna, reemplazando NA con el promedio de las observaciones
+starwars$birth_year.mean <- ifelse(
+                  is.na(starwars$birth_year), #Si esto es verdad
+                  mean(starwars$birth_year, na.rm=TRUE), #se ejecuta esto
+                      starwars$birth_year #sino pongo el valor original
+                           )
+
+starwars$birth_year.mean
+
+```
+
+Para evitar datos duplicados, se puede hacer lo siguiente:
+
+```{r}
+family.salary=c(40000,60000,50000,80000,60000,70000,60000)
+family.size=c(4,3,2,2,3,4,3)
+family.car=c("Lujo","Compacto","Utilitario","Lujo","Compacto","Compacto","Compacto")
+
+family<-data.frame(family.salary,family.size,family.car)
+family.unique <- unique(family)
+
+duplicated(family)
+family[duplicated(family),]
+```
+
+
+Para ver el comportamiento de los datos, podemos ver su distribución y la correlación entre las variables, para ello en este ejemplo vamos a cargar datos de desordenes de sueño en población mexicana del año 2016, esta información esta disponible en **ensanut**. 
+
+```{r}
+sleep_disorder_mx <- read.csv("/Users/erickCuevas/Documents/GitProyects/Curso-R-2019/Seccion_Nutricion/Cuestionario_de_Problemas_de_Suenno/ensanut_suenno_16112016.csv")
+
+selected <- data.frame(sleep_disorder_mx$cintura, sleep_disorder_mx$cintura2, sleep_disorder_mx$rcintura, sleep_disorder_mx$imc, sleep_disorder_mx$horasueno, sleep_disorder_mx$calidad, sleep_disorder_mx$volronquido, sleep_disorder_mx$frecron, sleep_disorder_mx$hta)
+
+selected <- na.omit(selected)
+
+colnames(selected) <- c("cintura","cintura2", "rcintura", "imc", "horasueno", "calidad",
+                        "volronquido", "frecron", "hta")
+
+selected <- unique(selected)
+
+selected.cor<-cor(selected, method = "pearson")
+round(selected.cor, digits = 2)
+
+col<-colorRampPalette(c("#BB4444","#EE9988", "#FFFFFF",
+                        "#77AADD", "#4477AA"))
+corrplot::corrplot(selected.cor, 
+                   method = "shade", 
+         shade.col = NA, tl.col = "black",
+         tl.srt = 45, col=col(200), 
+         addCoef.col = "black", addcolorlabel="no",
+         order="AOE")
+
+library(tidyverse)
+
+select.gathered <- selected %>%
+  as_data_frame() %>%
+  select_if(is.numeric) %>%
+  gather(key = "variable", value = "value")
+
+ggplot(select.gathered, aes(value)) + geom_histogram() +
+  facet_wrap(~variable, scales= "free") +
+  geom_density() + theme_bw()
+
+
+ggplot(select.gathered, aes(value)) +  geom_density(fill= "cyan", color= "black", alpha=0.5) +
+  facet_wrap(~variable, scales= "free") 
+ 
+```
+
+
+Estas son unas funciones básicas para hacer un análisis exploratorio de nuestros datos, y a partir de este poder tomar decision en estadistica. 
+
