@@ -14685,8 +14685,127 @@ hta            0.07 1.00
 
 
 ```r
-corrplot::corrplot(selected.cor)
+col<-colorRampPalette(c("#BB4444","#EE9988", "#FFFFFF",
+                        "#77AADD", "#4477AA"))
+corrplot::corrplot(selected.cor, 
+                   method = "shade", 
+         shade.col = NA, tl.col = "black",
+         tl.srt = 45, col=col(200), 
+         addCoef.col = "black", addcolorlabel="no",
+         order="AOE")
 ```
 
 ![plot of chunk unnamed-chunk-10](Clase 3-figure/unnamed-chunk-10-1.png)
+
+
+========================================================
+Otra manera
+
+```r
+library(purrr)
+select_numeric <- sleep_disorder_mx %>% purrr::keep(is.numeric) 
+head(select_numeric)
+```
+
+```
+  sexo intsel intsel2 su101 su102 su103 su104 su105 su106 su107 su111
+1    1      1      NA     6     2     2     2    NA    NA     2     1
+2    1      1      10     8     1     3     2    NA    NA     1    NA
+3    0      1      NA     6     2     3     2    NA    NA     1    NA
+4    0      1      NA     6     2     3     1     1     1     1     2
+5    1      1      NA     8     1     2     1     1     1     1     1
+6    0      1      NA     9     1     2     2    NA    NA     2    NA
+  su112 su113 su114 su115 su116   ponde_f a313g a313h a401 a502a a502b
+1    NA     1    NA     2    NA 41460.010     2     2    2     2     2
+2    NA    NA    NA     1     5 10219.816    NA    NA    2     2     2
+3    NA     1     1     2    NA 21001.348    NA    NA    2     2     2
+4    NA     1     1     2    NA 10500.674    NA    NA    2     2     2
+5    NA    NA    NA     2    NA  4526.882    NA    NA    2     2     2
+6    NA    NA    NA     2    NA  8113.035    NA    NA    2     2     2
+  a502c a502d a1301 a1301a a1312c cintura cintura2 rcintura grupoednut
+1     2     2     1      2      0    99.2     99.4        1          4
+2     2     2     2      2     30    98.6     98.6        1          4
+3     2     2     2      2     98    95.9     95.8        1          4
+4     2     2     2      2     98   110.2    110.2        1          4
+5     1     2     1      2      1   188.3    188.4        1          4
+6     2     2     2      2      0    94.1     94.0        1          4
+       imc imc_valid imc_valid_clas horasueno calidad volronquido frecron
+1 26.72470  26.72470              2         2       1           0       1
+2 27.32479  27.32479              2         1       1          NA      NA
+3 29.60135  29.60135              2         2       1          NA      NA
+4 33.07559  33.07559              3         2       1           0       1
+5 37.03704  37.03704              3         1       1           0       1
+6 26.09677  26.09677              2         1       1          NA      NA
+  cat1 cat1c cat2 cat2c hta saos saosc sexofem insomnio ronca roncafuerte
+1    3     1    1     0   0    1     0       0        0     1           0
+2   NA     0    0     0   0    0     0       0        0     0           0
+3   NA     0    2     1   0    1     0       1        0     0           0
+4    2     1    2     1   0    2     1       1        0     1           0
+5    3     1    0     0   0    1     0       0        0     1           0
+6   NA     0    0     0   0    0     0       1        0     0           0
+  roncahab roncamol apnea catberlin1 noreparador cansado cabeceado
+1        1        1     0          3           1       0         0
+2        0        0     0          0           0       0         1
+3        0        0     0          0           1       1         0
+4        1        0     0          2           1       1         0
+5        1        1     0          3           0       0         0
+6        0        0     0          0           0       0         0
+  catberlin2 catberlin3 catberlin1a catberlin2a berlinscore berlinriesgo
+1          1          0           1           0           1            0
+2          1          0           0           0           0            0
+3          2          0           0           1           1            0
+4          2          1           1           1           3            1
+5          0          1           1           0           2            1
+6          0          0           0           0           0            0
+  berlinscoresinbmi berlinriesgosinbmi malacalsueno impactoinsom insom3sem
+1                 1                  0            0            0         0
+2                 0                  0            0            0         0
+3                 1                  0            0            0         0
+4                 2                  1            0            1         1
+5                 1                  0            0            1         1
+6                 0                  0            0            0         0
+  insomhabi horasueno1 horasueno2 horasueno3 clonazepam diazepam
+1         0          0          1          0          1        0
+2         0          1          0          0          0        0
+3         0          0          1          0          0        0
+4         1          0          1          0          0        0
+5         1          1          0          0          0        0
+6         0          1          0          0          1        0
+  alprazolam sedante cinturaprom cinturaprom.mean
+1          0       1    99.30000         99.30000
+2          0       0    98.60000         98.60000
+3          0       0    95.85001         95.85001
+4          0       0   110.20000        110.20000
+5          0       0   188.35001        188.35001
+6          0       1    94.05000         94.05000
+```
+
+Pero...
+
+
+========================================================
+
+
+```r
+library(tidyverse)
+
+select.gathered <- selected %>%
+  as_data_frame() %>%
+  select_if(is.numeric) %>%
+  gather(key = "variable", value = "value")
+
+ggplot(select.gathered, aes(value)) + geom_histogram() +
+  facet_wrap(~variable, scales= "free") +
+  geom_density() + theme_bw()
+```
+
+![plot of chunk unnamed-chunk-12](Clase 3-figure/unnamed-chunk-12-1.png)
+
+```r
+ggplot(select.gathered, aes(value)) +  geom_density(fill= "cyan", color= "black", alpha=0.5) +
+  facet_wrap(~variable, scales= "free") 
+```
+
+![plot of chunk unnamed-chunk-12](Clase 3-figure/unnamed-chunk-12-2.png)
+
  

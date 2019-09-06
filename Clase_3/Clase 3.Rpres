@@ -145,6 +145,50 @@ round(selected.cor, digits = 2)
 ========================================================
 
 ```{r}
-corrplot::corrplot(selected.cor)
+
+col<-colorRampPalette(c("#BB4444","#EE9988", "#FFFFFF",
+                        "#77AADD", "#4477AA"))
+corrplot::corrplot(selected.cor, 
+                   method = "shade", 
+         shade.col = NA, tl.col = "black",
+         tl.srt = 45, col=col(200), 
+         addCoef.col = "black", addcolorlabel="no",
+         order="AOE")
 ```
+
+
+========================================================
+Otra manera
+```{r}
+library(purrr)
+select_numeric <- sleep_disorder_mx %>% purrr::keep(is.numeric) 
+head(select_numeric)
+
+```
+
+Pero...
+
+
+========================================================
+
+```{r}
+library(tidyverse)
+
+select.gathered <- selected %>%
+  as_data_frame() %>%
+  select_if(is.numeric) %>%
+  gather(key = "variable", value = "value")
+
+ggplot(select.gathered, aes(value)) + geom_histogram() +
+  facet_wrap(~variable, scales= "free") +
+  geom_density() + theme_bw()
+
+
+ggplot(select.gathered, aes(value)) +  geom_density(fill= "cyan", color= "black", alpha=0.5) +
+  facet_wrap(~variable, scales= "free") 
+ 
+    
+
+```
+
  
