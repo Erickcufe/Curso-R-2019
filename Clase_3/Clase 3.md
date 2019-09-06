@@ -14546,4 +14546,72 @@ str(sleep_disorder_mx)
  $ padormir2         : Factor w/ 30 levels "","0","101.9000015258789",..: 1 1 1 1 1 1 1 1 1 1 ...
 ```
 
+========================================================
 
+
+```r
+#Limpieza selectiva de los datos sin valor 
+#Limpiar NA de solamente la variable sexo
+sleep_disorder_mx.cleaned<-sleep_disorder_mx[!is.na(sleep_disorder_mx$sexo),]
+#Filas completas para un data frame 
+# complete.cases(sleep_disorder_mx) #Checa en que altura de fila hay un NA
+sleep_disorder_mx.cleaned.2<- sleep_disorder_mx[complete.cases(sleep_disorder_mx),]
+
+#Convertir algun valor en NA
+sleep_disorder_mx$sexo[sleep_disorder_mx$padormir1=="?"]<-NA
+```
+
+========================================================
+
+
+```r
+#Medidas de centralización y dispersión
+mean(sleep_disorder_mx$cinturaprom) #Devuelve NA porque aun tiene NA
+```
+
+```
+[1] NA
+```
+
+```r
+mean(sleep_disorder_mx$cinturaprom, na.rm=TRUE) #Quita los NA y nos arroja un resultado
+```
+
+```
+[1] 96.3213
+```
+
+```r
+sd(sleep_disorder_mx$cinturaprom)
+```
+
+```
+[1] NA
+```
+
+```r
+sd(sleep_disorder_mx$cinturaprom,na.rm=TRUE)
+```
+
+```
+[1] 18.80604
+```
+
+Replace Missing
+========================================================
+
+
+```r
+#Genera una nueva columna, reemplazando NA con el promedio de las observaciones
+sleep_disorder_mx$cinturaprom.mean <- ifelse(
+                  is.na(sleep_disorder_mx$cinturaprom), #Si esto es verdad
+                  mean(sleep_disorder_mx$cinturaprom, na.rm=TRUE), #se ejecuta esto
+                      sleep_disorder_mx$cinturaprom #sino pongo el valor original
+                           )
+```
+
+Evitando duplicados
+========================================================
+
+
+ 

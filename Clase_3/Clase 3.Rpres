@@ -66,4 +66,49 @@ Un vistazo a los datos
 str(sleep_disorder_mx)
 ```
 
+========================================================
 
+```{r}
+
+#Limpieza selectiva de los datos sin valor 
+#Limpiar NA de solamente la variable sexo
+sleep_disorder_mx.cleaned<-sleep_disorder_mx[!is.na(sleep_disorder_mx$sexo),]
+#Filas completas para un data frame 
+# complete.cases(sleep_disorder_mx) #Checa en que altura de fila hay un NA
+sleep_disorder_mx.cleaned.2<- sleep_disorder_mx[complete.cases(sleep_disorder_mx),]
+
+#Convertir algun valor en NA
+sleep_disorder_mx$sexo[sleep_disorder_mx$padormir1=="?"]<-NA
+
+```
+
+========================================================
+
+```{r}
+#Medidas de centralización y dispersión
+mean(sleep_disorder_mx$cinturaprom) #Devuelve NA porque aun tiene NA
+mean(sleep_disorder_mx$cinturaprom, na.rm=TRUE) #Quita los NA y nos arroja un resultado
+
+sd(sleep_disorder_mx$cinturaprom)
+sd(sleep_disorder_mx$cinturaprom,na.rm=TRUE)
+
+```
+
+Replace Missing
+========================================================
+
+```{r}
+#Genera una nueva columna, reemplazando NA con el promedio de las observaciones
+sleep_disorder_mx$cinturaprom.mean <- ifelse(
+                  is.na(sleep_disorder_mx$cinturaprom), #Si esto es verdad
+                  mean(sleep_disorder_mx$cinturaprom, na.rm=TRUE), #se ejecuta esto
+                      sleep_disorder_mx$cinturaprom #sino pongo el valor original
+                           )
+
+```
+
+Evitando duplicados
+========================================================
+
+
+ 
