@@ -14649,6 +14649,8 @@ selected <- data.frame(sleep_disorder_mx$cintura, sleep_disorder_mx$cintura2, sl
 
 selected <- na.omit(selected)
 
+colnames(selected) <- c("cintura","cintura2", "rcintura", "imc", "horasueno", "calidad",
+                        "volronquido", "frecron", "hta")
 
 selected <- unique(selected)
 
@@ -14657,96 +14659,26 @@ round(selected.cor, digits = 2)
 ```
 
 ```
-                              sleep_disorder_mx.cintura
-sleep_disorder_mx.cintura                          1.00
-sleep_disorder_mx.cintura2                         1.00
-sleep_disorder_mx.rcintura                        -0.05
-sleep_disorder_mx.imc                              0.43
-sleep_disorder_mx.horasueno                       -0.03
-sleep_disorder_mx.calidad                         -0.08
-sleep_disorder_mx.volronquido                     -0.03
-sleep_disorder_mx.frecron                          0.07
-sleep_disorder_mx.hta                              0.15
-                              sleep_disorder_mx.cintura2
-sleep_disorder_mx.cintura                           1.00
-sleep_disorder_mx.cintura2                          1.00
-sleep_disorder_mx.rcintura                         -0.02
-sleep_disorder_mx.imc                               0.43
-sleep_disorder_mx.horasueno                        -0.03
-sleep_disorder_mx.calidad                          -0.09
-sleep_disorder_mx.volronquido                      -0.03
-sleep_disorder_mx.frecron                           0.07
-sleep_disorder_mx.hta                               0.15
-                              sleep_disorder_mx.rcintura
-sleep_disorder_mx.cintura                          -0.05
-sleep_disorder_mx.cintura2                         -0.02
-sleep_disorder_mx.rcintura                          1.00
-sleep_disorder_mx.imc                              -0.10
-sleep_disorder_mx.horasueno                         0.43
-sleep_disorder_mx.calidad                           0.04
-sleep_disorder_mx.volronquido                       0.05
-sleep_disorder_mx.frecron                           0.02
-sleep_disorder_mx.hta                               0.07
-                              sleep_disorder_mx.imc
-sleep_disorder_mx.cintura                      0.43
-sleep_disorder_mx.cintura2                     0.43
-sleep_disorder_mx.rcintura                    -0.10
-sleep_disorder_mx.imc                          1.00
-sleep_disorder_mx.horasueno                   -0.03
-sleep_disorder_mx.calidad                      0.16
-sleep_disorder_mx.volronquido                  0.17
-sleep_disorder_mx.frecron                      0.09
-sleep_disorder_mx.hta                          0.13
-                              sleep_disorder_mx.horasueno
-sleep_disorder_mx.cintura                           -0.03
-sleep_disorder_mx.cintura2                          -0.03
-sleep_disorder_mx.rcintura                           0.43
-sleep_disorder_mx.imc                               -0.03
-sleep_disorder_mx.horasueno                          1.00
-sleep_disorder_mx.calidad                            0.14
-sleep_disorder_mx.volronquido                        0.09
-sleep_disorder_mx.frecron                            0.04
-sleep_disorder_mx.hta                                0.09
-                              sleep_disorder_mx.calidad
-sleep_disorder_mx.cintura                         -0.08
-sleep_disorder_mx.cintura2                        -0.09
-sleep_disorder_mx.rcintura                         0.04
-sleep_disorder_mx.imc                              0.16
-sleep_disorder_mx.horasueno                        0.14
-sleep_disorder_mx.calidad                          1.00
-sleep_disorder_mx.volronquido                      0.69
-sleep_disorder_mx.frecron                          0.10
-sleep_disorder_mx.hta                              0.16
-                              sleep_disorder_mx.volronquido
-sleep_disorder_mx.cintura                             -0.03
-sleep_disorder_mx.cintura2                            -0.03
-sleep_disorder_mx.rcintura                             0.05
-sleep_disorder_mx.imc                                  0.17
-sleep_disorder_mx.horasueno                            0.09
-sleep_disorder_mx.calidad                              0.69
-sleep_disorder_mx.volronquido                          1.00
-sleep_disorder_mx.frecron                              0.22
-sleep_disorder_mx.hta                                  0.17
-                              sleep_disorder_mx.frecron
-sleep_disorder_mx.cintura                          0.07
-sleep_disorder_mx.cintura2                         0.07
-sleep_disorder_mx.rcintura                         0.02
-sleep_disorder_mx.imc                              0.09
-sleep_disorder_mx.horasueno                        0.04
-sleep_disorder_mx.calidad                          0.10
-sleep_disorder_mx.volronquido                      0.22
-sleep_disorder_mx.frecron                          1.00
-sleep_disorder_mx.hta                              0.07
-                              sleep_disorder_mx.hta
-sleep_disorder_mx.cintura                      0.15
-sleep_disorder_mx.cintura2                     0.15
-sleep_disorder_mx.rcintura                     0.07
-sleep_disorder_mx.imc                          0.13
-sleep_disorder_mx.horasueno                    0.09
-sleep_disorder_mx.calidad                      0.16
-sleep_disorder_mx.volronquido                  0.17
-sleep_disorder_mx.frecron                      0.07
-sleep_disorder_mx.hta                          1.00
+            cintura cintura2 rcintura   imc horasueno calidad volronquido
+cintura        1.00     1.00    -0.05  0.43     -0.03   -0.08       -0.03
+cintura2       1.00     1.00    -0.02  0.43     -0.03   -0.09       -0.03
+rcintura      -0.05    -0.02     1.00 -0.10      0.43    0.04        0.05
+imc            0.43     0.43    -0.10  1.00     -0.03    0.16        0.17
+horasueno     -0.03    -0.03     0.43 -0.03      1.00    0.14        0.09
+calidad       -0.08    -0.09     0.04  0.16      0.14    1.00        0.69
+volronquido   -0.03    -0.03     0.05  0.17      0.09    0.69        1.00
+frecron        0.07     0.07     0.02  0.09      0.04    0.10        0.22
+hta            0.15     0.15     0.07  0.13      0.09    0.16        0.17
+            frecron  hta
+cintura        0.07 0.15
+cintura2       0.07 0.15
+rcintura       0.02 0.07
+imc            0.09 0.13
+horasueno      0.04 0.09
+calidad        0.10 0.16
+volronquido    0.22 0.17
+frecron        1.00 0.07
+hta            0.07 1.00
 ```
 
 ========================================================

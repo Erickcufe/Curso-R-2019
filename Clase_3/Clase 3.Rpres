@@ -131,6 +131,8 @@ selected <- data.frame(sleep_disorder_mx$cintura, sleep_disorder_mx$cintura2, sl
 
 selected <- na.omit(selected)
 
+colnames(selected) <- c("cintura","cintura2", "rcintura", "imc", "horasueno", "calidad",
+                        "volronquido", "frecron", "hta")
 
 selected <- unique(selected)
 
