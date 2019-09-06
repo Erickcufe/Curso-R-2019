@@ -689,4 +689,7 @@ ggplot(select.gathered, aes(value)) +  geom_density(fill= "cyan", color= "black"
 
 ![plot of chunk unnamed-chunk-12](Clase 3-figure/unnamed-chunk-12-2.png)
 
- 
+Tarea
+======================================================== 
+Con los datos de **sleep_disorder.csv** y **Paths_sleep.csv**, ¿qué correlaciones se te ocurren hacer? ¿Cómo juntas los datos de ensanut con los GWAS?
+
