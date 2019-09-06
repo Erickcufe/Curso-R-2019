@@ -14614,4 +14614,147 @@ Evitando duplicados
 ========================================================
 
 
+```r
+family.salary=c(40000,60000,50000,80000,60000,70000,60000)
+family.size=c(4,3,2,2,3,4,3)
+family.car=c("Lujo","Compacto","Utilitario","Lujo","Compacto","Compacto","Compacto")
+
+family<-data.frame(family.salary,family.size,family.car)
+family.unique <- unique(family)
+
+duplicated(family)
+```
+
+```
+[1] FALSE FALSE FALSE FALSE  TRUE FALSE  TRUE
+```
+
+```r
+family[duplicated(family),]
+```
+
+```
+  family.salary family.size family.car
+5         60000           3   Compacto
+7         60000           3   Compacto
+```
+
+Vamos más alla
+========================================================
+Hay que quedarnos solo con variables numericas que nos puedan interesar, eliminar columnas que tengan **NAs**, y eliminar duplicados. 
+
+
+```r
+selected <- data.frame(sleep_disorder_mx$cintura, sleep_disorder_mx$cintura2, sleep_disorder_mx$rcintura, sleep_disorder_mx$imc, sleep_disorder_mx$horasueno, sleep_disorder_mx$calidad, sleep_disorder_mx$volronquido, sleep_disorder_mx$frecron, sleep_disorder_mx$hta)
+
+selected <- na.omit(selected)
+
+
+selected <- unique(selected)
+
+selected.cor<-cor(selected, method = "pearson")
+round(selected.cor, digits = 2)
+```
+
+```
+                              sleep_disorder_mx.cintura
+sleep_disorder_mx.cintura                          1.00
+sleep_disorder_mx.cintura2                         1.00
+sleep_disorder_mx.rcintura                        -0.05
+sleep_disorder_mx.imc                              0.43
+sleep_disorder_mx.horasueno                       -0.03
+sleep_disorder_mx.calidad                         -0.08
+sleep_disorder_mx.volronquido                     -0.03
+sleep_disorder_mx.frecron                          0.07
+sleep_disorder_mx.hta                              0.15
+                              sleep_disorder_mx.cintura2
+sleep_disorder_mx.cintura                           1.00
+sleep_disorder_mx.cintura2                          1.00
+sleep_disorder_mx.rcintura                         -0.02
+sleep_disorder_mx.imc                               0.43
+sleep_disorder_mx.horasueno                        -0.03
+sleep_disorder_mx.calidad                          -0.09
+sleep_disorder_mx.volronquido                      -0.03
+sleep_disorder_mx.frecron                           0.07
+sleep_disorder_mx.hta                               0.15
+                              sleep_disorder_mx.rcintura
+sleep_disorder_mx.cintura                          -0.05
+sleep_disorder_mx.cintura2                         -0.02
+sleep_disorder_mx.rcintura                          1.00
+sleep_disorder_mx.imc                              -0.10
+sleep_disorder_mx.horasueno                         0.43
+sleep_disorder_mx.calidad                           0.04
+sleep_disorder_mx.volronquido                       0.05
+sleep_disorder_mx.frecron                           0.02
+sleep_disorder_mx.hta                               0.07
+                              sleep_disorder_mx.imc
+sleep_disorder_mx.cintura                      0.43
+sleep_disorder_mx.cintura2                     0.43
+sleep_disorder_mx.rcintura                    -0.10
+sleep_disorder_mx.imc                          1.00
+sleep_disorder_mx.horasueno                   -0.03
+sleep_disorder_mx.calidad                      0.16
+sleep_disorder_mx.volronquido                  0.17
+sleep_disorder_mx.frecron                      0.09
+sleep_disorder_mx.hta                          0.13
+                              sleep_disorder_mx.horasueno
+sleep_disorder_mx.cintura                           -0.03
+sleep_disorder_mx.cintura2                          -0.03
+sleep_disorder_mx.rcintura                           0.43
+sleep_disorder_mx.imc                               -0.03
+sleep_disorder_mx.horasueno                          1.00
+sleep_disorder_mx.calidad                            0.14
+sleep_disorder_mx.volronquido                        0.09
+sleep_disorder_mx.frecron                            0.04
+sleep_disorder_mx.hta                                0.09
+                              sleep_disorder_mx.calidad
+sleep_disorder_mx.cintura                         -0.08
+sleep_disorder_mx.cintura2                        -0.09
+sleep_disorder_mx.rcintura                         0.04
+sleep_disorder_mx.imc                              0.16
+sleep_disorder_mx.horasueno                        0.14
+sleep_disorder_mx.calidad                          1.00
+sleep_disorder_mx.volronquido                      0.69
+sleep_disorder_mx.frecron                          0.10
+sleep_disorder_mx.hta                              0.16
+                              sleep_disorder_mx.volronquido
+sleep_disorder_mx.cintura                             -0.03
+sleep_disorder_mx.cintura2                            -0.03
+sleep_disorder_mx.rcintura                             0.05
+sleep_disorder_mx.imc                                  0.17
+sleep_disorder_mx.horasueno                            0.09
+sleep_disorder_mx.calidad                              0.69
+sleep_disorder_mx.volronquido                          1.00
+sleep_disorder_mx.frecron                              0.22
+sleep_disorder_mx.hta                                  0.17
+                              sleep_disorder_mx.frecron
+sleep_disorder_mx.cintura                          0.07
+sleep_disorder_mx.cintura2                         0.07
+sleep_disorder_mx.rcintura                         0.02
+sleep_disorder_mx.imc                              0.09
+sleep_disorder_mx.horasueno                        0.04
+sleep_disorder_mx.calidad                          0.10
+sleep_disorder_mx.volronquido                      0.22
+sleep_disorder_mx.frecron                          1.00
+sleep_disorder_mx.hta                              0.07
+                              sleep_disorder_mx.hta
+sleep_disorder_mx.cintura                      0.15
+sleep_disorder_mx.cintura2                     0.15
+sleep_disorder_mx.rcintura                     0.07
+sleep_disorder_mx.imc                          0.13
+sleep_disorder_mx.horasueno                    0.09
+sleep_disorder_mx.calidad                      0.16
+sleep_disorder_mx.volronquido                  0.17
+sleep_disorder_mx.frecron                      0.07
+sleep_disorder_mx.hta                          1.00
+```
+
+========================================================
+
+
+```r
+corrplot::corrplot(selected.cor)
+```
+
+![plot of chunk unnamed-chunk-10](Clase 3-figure/unnamed-chunk-10-1.png)
  
