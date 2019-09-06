@@ -1,0 +1,409 @@
+"","Gen","ID","Path_name","pvalue"
+"1","MEIS1","R-HSA-5619507","Activation of HOX genes during differentiation",0.00818573142332935
+"2","MEIS1","R-HSA-5617472","Activation of anterior HOX genes in hindbrain development during early embryogenesis",0.00818573142332935
+"3","MEIS1","R-HSA-1266738","Developmental Biology",0.0851033801425446
+"4","CPT1B","R-HSA-200425","Import of palmitoyl-CoA into the mitochondrial matrix",0.00197586620563117
+"5","CPT1B","R-HSA-5362517","Signaling by Retinoic Acid",0.00508079881448031
+"6","CPT1B","R-HSA-9006931","Signaling by Nuclear Receptors",0.0223696281137534
+"7","CPT1B","R-HSA-8978868","Fatty acid metabolism",0.0302730929362783
+"8","CPT1B","R-HSA-556833","Metabolism of lipids",0.10189824289041
+"9","CPT1B","R-HSA-162582","Signal Transduction",0.226660080445981
+"10","CPT1B","R-HSA-1430728","Metabolism",0.256792040081857
+"11","CEP152","R-HSA-380284","Loss of proteins required for interphase microtubule organization from the centrosome",0.0050102321642792
+"12","CEP152","R-HSA-380259","Loss of Nlp from mitotic centrosomes",0.0050102321642792
+"13","CEP152","R-HSA-8854518","AURKA Activation by TPX2",0.00522193211488253
+"14","CEP152","R-HSA-380270","Recruitment of mitotic centrosome proteins and complexes",0.0057158986662903
+"15","CEP152","R-HSA-380287","Centrosome maturation",0.00585703196669252
+"16","CEP152","R-HSA-2565942","Regulation of PLK1 Activity at G2/M Transition",0.00649213181850261
+"17","CEP152","R-HSA-380320","Recruitment of NuMA to mitotic centrosomes",0.00684496506950816
+"18","CEP152","R-HSA-5620912","Anchoring of the basal body to the plasma membrane",0.00698609836991038
+"19","CEP152","R-HSA-68877","Mitotic Prometaphase",0.0146072965916308
+"20","CEP152","R-HSA-5617833","Cilium Assembly",0.014677863241832
+"21","CEP152","R-HSA-69275","G2/M Transition",0.0149601298426364
+"22","CEP152","R-HSA-453274","Mitotic G2-G2/M phases",0.0151012631430386
+"23","CEP152","R-HSA-1852241","Organelle biogenesis and maintenance",0.0236398278173735
+"24","CEP152","R-HSA-68886","M Phase",0.0275209935784348
+"25","CEP152","R-HSA-69278","Cell Cycle, Mitotic",0.0402229906146355
+"26","CEP152","R-HSA-1640170","Cell Cycle",0.0481264554371604
+"27","SATB2","R-HSA-8940973","RUNX2 regulates osteoblast differentiation",0.00239926610683794
+"28","SATB2","R-HSA-8941326","RUNX2 regulates bone development",0.00303436595864792
+"29","SATB2","R-HSA-4551638","SUMOylation of chromatin organization proteins",0.00437513231246911
+"30","SATB2","R-HSA-8878166","Transcriptional regulation by RUNX2",0.0103732975795638
+"31","SATB2","R-HSA-3108232","SUMO E3 ligases SUMOylate target proteins",0.012913696986804
+"32","SATB2","R-HSA-2990846","SUMOylation",0.0135487968386141
+"33","SATB2","R-HSA-212436","Generic Transcription Pathway",0.107543574906499
+"34","SATB2","R-HSA-597592","Post-translational protein modification",0.112483240420577
+"35","SATB2","R-HSA-73857","RNA Polymerase II Transcription",0.117352339284454
+"36","SATB2","R-HSA-74160","Gene expression (Transcription)",0.12850187001623
+"37","SATB2","R-HSA-392499","Metabolism of proteins",0.166184461223626
+"38","SPRED1","R-HSA-5658623","FGFRL1 modulation of FGFR1 signaling",0.000987933102815641
+"39","SPRED1","R-HSA-5654736","Signaling by FGFR1",0.004304565662268
+"40","SPRED1","R-HSA-6802949","Signaling by RAS mutants",0.00458683226307244
+"41","SPRED1","R-HSA-5658442","Regulation of RAS by GAPs",0.0049396655140781
+"42","SPRED1","R-HSA-6802957","Oncogenic MAPK signaling",0.0064215651683015
+"43","SPRED1","R-HSA-190236","Signaling by FGFR",0.00748006492131814
+"44","SPRED1","R-HSA-5673001","RAF/MAP kinase cascade",0.0193352621551055
+"45","SPRED1","R-HSA-5684996","MAPK1/MAPK3 signaling",0.0198292287065133
+"46","SPRED1","R-HSA-9607240","FLT3 Signaling",0.0208171618093289
+"47","SPRED1","R-HSA-449836","Other interleukin signaling",0.0224401947639545
+"48","SPRED1","R-HSA-5683057","MAPK family signaling cascades",0.0234281278667702
+"49","SPRED1","R-HSA-5663202","Diseases of signal transduction",0.0345070919483452
+"50","SPRED1","R-HSA-9006934","Signaling by Receptor Tyrosine Kinases",0.0381765577588031
+"51","SPRED1","R-HSA-449147","Signaling by Interleukins",0.0589937195681322
+"52","SPRED1","R-HSA-1280215","Cytokine Signaling in Immune system",0.0878554795003881
+"53","SPRED1","R-HSA-1643685","Disease",0.109731141062734
+"54","SPRED1","R-HSA-168256","Immune System",0.197798320513725
+"55","SPRED1","R-HSA-162582","Signal Transduction",0.226660080445981
+"56","TAS2R1","R-HSA-420499","Class C/3 (Metabotropic glutamate/pheromone receptors)",0.00656269846870372
+"57","TAS2R1","R-HSA-418594","G alpha (i) signalling events",0.0400112906640322
+"58","TAS2R1","R-HSA-500792","GPCR ligand binding",0.0453743560793169
+"59","TAS2R1","R-HSA-388396","GPCR downstream signalling",0.0958295109731141
+"60","TAS2R1","R-HSA-372790","Signaling by GPCR",0.104085809046645
+"61","TAS2R1","R-HSA-162582","Signal Transduction",0.226660080445981
+"62","NRG1","R-HSA-1306955","GRB7 events in ERBB2 signaling",1.79267476307921e-07
+"63","NRG1","R-HSA-1358803","Downregulation of ERBB2:ERBB3 signaling",1.27479094291783e-06
+"64","NRG1","R-HSA-8847993","ERBB2 Activates PTK6 Signaling",1.61340728710435e-06
+"65","NRG1","R-HSA-6785631","ERBB2 Regulates Cell Motility",1.79765441554736e-06
+"66","NRG1","R-HSA-1963642","PI3K events in ERBB2 signaling",2.41015162638636e-06
+"67","NRG1","R-HSA-1250196","SHC1 events in ERBB2 signaling",6.1000738477146e-06
+"68","NRG1","R-HSA-8863795","Downregulation of ERBB2 signaling",6.45362914830638e-06
+"69","NRG1","R-HSA-1227986","Signaling by ERBB2",2.2353658369445e-05
+"70","NRG1","R-HSA-8848021","Signaling by PTK6",2.44002953909694e-05
+"71","NRG1","R-HSA-9006927","Signaling by Non-Receptor Tyrosine Kinases",2.44002953909694e-05
+"72","NRG1","R-HSA-1236394","Signaling by ERBB4",3.26714975632525e-05
+"73","NRG1","R-HSA-2219530","Constitutive Signaling by Aberrant PI3K in Cancer",5.28291293475647e-05
+"74","NRG1","R-HSA-6811558","PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",7.9056957066781e-05
+"75","NRG1","R-HSA-199418","Negative regulation of the PI3K/AKT network",8.94146334775581e-05
+"76","NRG1","R-HSA-2219528","PI3K/AKT Signaling in Cancer",8.94146334775581e-05
+"77","NRG1","R-HSA-5673001","RAF/MAP kinase cascade",0.000373852362606675
+"78","NRG1","R-HSA-5684996","MAPK1/MAPK3 signaling",0.000393198311095189
+"79","NRG1","R-HSA-9607240","FLT3 Signaling",0.000433354225795823
+"80","NRG1","R-HSA-1257604","PIP3 activates AKT signaling",0.000494105981667214
+"81","NRG1","R-HSA-449836","Other interleukin signaling",0.000503562341044206
+"82","NRG1","R-HSA-5683057","MAPK family signaling cascades",0.000548877175341689
+"83","NRG1","R-HSA-9006925","Intracellular signaling by second messengers",0.000648953244009598
+"84","NRG1","R-HSA-5663202","Diseases of signal transduction",0.00119073939473158
+"85","NRG1","R-HSA-9006934","Signaling by Receptor Tyrosine Kinases",0.0014574495623112
+"86","NRG1","R-HSA-1250342","PI3K events in ERBB4 signaling",0.00211587908430633
+"87","NRG1","R-HSA-1250347","SHC1 events in ERBB4 signaling",0.00282067414719633
+"88","NRG1","R-HSA-1963640","GRB2 events in ERBB2 signaling",0.00282067414719633
+"89","NRG1","R-HSA-449147","Signaling by Interleukins",0.00348025894848347
+"90","NRG1","R-HSA-9620244","Long-term potentiation",0.00437034686678128
+"91","NRG1","R-HSA-1251985","Nuclear signaling by ERBB4",0.00662226506737029
+"92","NRG1","R-HSA-1280215","Cytokine Signaling in Immune system",0.0077185852782431
+"93","NRG1","R-HSA-1643685","Disease",0.0120409233189296
+"94","NRG1","R-HSA-438064","Post NMDA receptor activation events",0.0133627221778234
+"95","NRG1","R-HSA-442755","Activation of NMDA receptors and postsynaptic events",0.015744464888849
+"96","NRG1","R-HSA-112314","Neurotransmitter receptors and postsynaptic signal transmission",0.0323360731761074
+"97","NRG1","R-HSA-168256","Immune System",0.0391241755980504
+"98","NRG1","R-HSA-112315","Transmission across Chemical Synapses",0.0490619229252334
+"99","NRG1","R-HSA-162582","Signal Transduction",0.0513747920677787
+"100","NRG1","R-HSA-112316","Neuronal System",0.0690494099557916
+"101","DEC1","R-HSA-1368108","BMAL1:CLOCK,NPAS2 activates circadian gene expression",8.78410634075344e-06
+"102","DEC1","R-HSA-400253","Circadian Clock",5.38599173365295e-05
+"103","ANO6","R-HSA-2672351","Stimuli-sensing channels",0.00846799802413378
+"104","ANO6","R-HSA-983712","Ion channel transport",0.0146072965916308
+"105","ANO6","R-HSA-6798695","Neutrophil degranulation",0.0338719920965351
+"106","ANO6","R-HSA-382551","Transport of small molecules",0.0682379507444781
+"107","ANO6","R-HSA-168249","Innate Immune System",0.0934302448662762
+"108","ANO6","R-HSA-168256","Immune System",0.197798320513725
+"109","CACNA1D","R-HSA-400042","Adrenaline,noradrenaline inhibits insulin secretion",0.00225813280643572
+"110","CACNA1D","R-HSA-5576893","Phase 2 - plateau phase",0.00296379930844681
+"111","CACNA1D","R-HSA-419037","NCAM1 interactions",0.00310493260884903
+"112","CACNA1D","R-HSA-5576892","Phase 0 - rapid depolarisation",0.00479853221367577
+"113","CACNA1D","R-HSA-375165","NCAM signaling for neurite out-growth",0.00486909886387699
+"114","CACNA1D","R-HSA-422356","Regulation of insulin secretion",0.00748006492131814
+"115","CACNA1D","R-HSA-163685","Integration of energy metabolism",0.0101615976289605
+"116","CACNA1D","R-HSA-5576891","Cardiac conduction",0.0123491637851951
+"117","CACNA1D","R-HSA-397014","Muscle contraction",0.0180650624514854
+"118","CACNA1D","R-HSA-422475","Axon guidance",0.0411403570672501
+"119","CACNA1D","R-HSA-1266738","Developmental Biology",0.0851033801425446
+"120","CACNA1D","R-HSA-1430728","Metabolism",0.256792040081857
+"121","ENPP6","R-HSA-6814848","Glycerophospholipid catabolism",0.00127019970362008
+"122","ENPP6","R-HSA-1483255","PI Metabolism",0.00790346482252491
+"123","ENPP6","R-HSA-1483257","Phospholipid metabolism",0.0229341613153624
+"124","ENPP6","R-HSA-556833","Metabolism of lipids",0.10189824289041
+"125","ENPP6","R-HSA-1430728","Metabolism",0.256792040081857
+"126","IL15","R-HSA-8983432","Interleukin-15 signaling",0.00112906640321786
+"127","IL15","R-HSA-451927","Interleukin-2 family signaling",0.00331663255945236
+"128","IL15","R-HSA-449147","Signaling by Interleukins",0.0589937195681322
+"129","IL15","R-HSA-1280215","Cytokine Signaling in Immune system",0.0878554795003881
+"130","IL15","R-HSA-168256","Immune System",0.197798320513725
+"131","MDGA2","R-HSA-163125","Post-translational modification: synthesis of GPI-anchored proteins",0.00811516477312824
+"132","MDGA2","R-HSA-597592","Post-translational protein modification",0.112483240420577
+"133","MDGA2","R-HSA-392499","Metabolism of proteins",0.166184461223626
+"134","NTF3","R-HSA-9025046","NTF3 activates NTRK2 (TRKB) signaling",0.000282266600804437
+"135","NTF3","R-HSA-9034013","NTF3 activates NTRK3 signaling",0.000282266600804437
+"136","NTF3","R-HSA-9034793","Activated NTRK3 signals through PLCG1",0.000352833251005547
+"137","NTF3","R-HSA-9603381","Activated NTRK3 signals through PI3K",0.000705666502011204
+"138","NTF3","R-HSA-9034864","Activated NTRK3 signals through RAS",0.000917366452614532
+"139","NTF3","R-HSA-9034015","Signaling by NTRK3 (TRKC)",0.00183473290522895
+"140","NTF3","R-HSA-9006115","Signaling by NTRK2 (TRKB)",0.00225813280643572
+"141","NTF3","R-HSA-166520","Signaling by NTRKs",0.00811516477312824
+"142","NTF3","R-HSA-9006934","Signaling by Receptor Tyrosine Kinases",0.0381765577588031
+"143","NTF3","R-HSA-162582","Signal Transduction",0.226660080445981
+"144","ZNF616","R-HSA-212436","Generic Transcription Pathway",0.107543574906499
+"145","ZNF616","R-HSA-73857","RNA Polymerase II Transcription",0.117352339284454
+"146","ZNF616","R-HSA-74160","Gene expression (Transcription)",0.12850187001623
+"147","P2RY11","R-HSA-417957","P2Y receptors",0.00162303295462563
+"148","P2RY11","R-HSA-418038","Nucleotide-like (purinergic) receptors",0.00197586620563117
+"149","P2RY11","R-HSA-416476","G alpha (q) signalling events",0.0198997953567144
+"150","P2RY11","R-HSA-373076","Class A/1 (Rhodopsin-like receptors)",0.031896125890904
+"151","P2RY11","R-HSA-418555","G alpha (s) signalling events",0.0426928233716746
+"152","P2RY11","R-HSA-500792","GPCR ligand binding",0.0453743560793169
+"153","P2RY11","R-HSA-388396","GPCR downstream signalling",0.0958295109731141
+"154","P2RY11","R-HSA-372790","Signaling by GPCR",0.104085809046645
+"155","P2RY11","R-HSA-162582","Signal Transduction",0.226660080445981
+"156","IL10RB","R-HSA-8854691","Interleukin-20 family signaling",0.00204643285583228
+"157","IL10RB","R-HSA-6783783","Interleukin-10 signaling",0.00606873191729584
+"158","IL10RB","R-HSA-449836","Other interleukin signaling",0.0224401947639545
+"159","IL10RB","R-HSA-449147","Signaling by Interleukins",0.0589937195681322
+"160","IL10RB","R-HSA-1280215","Cytokine Signaling in Immune system",0.0878554795003881
+"161","IL10RB","R-HSA-168256","Immune System",0.197798320513725
+"162","MEIS1","R-HSA-5619507","Activation of HOX genes during differentiation",0.00818573142332935
+"163","MEIS1","R-HSA-5617472","Activation of anterior HOX genes in hindbrain development during early embryogenesis",0.00818573142332935
+"164","MEIS1","R-HSA-1266738","Developmental Biology",0.0851033801425446
+"165","TEAD4","R-HSA-8951671","RUNX3 regulates YAP1-mediated transcription",0.000635099851809984
+"166","TEAD4","R-HSA-2032785","YAP1- and WWTR1 (TAZ)-stimulated gene expression",0.00127019970362008
+"167","TEAD4","R-HSA-8878159","Transcriptional regulation by RUNX3",0.00832686472373156
+"168","TEAD4","R-HSA-212436","Generic Transcription Pathway",0.107543574906499
+"169","TEAD4","R-HSA-73857","RNA Polymerase II Transcription",0.117352339284454
+"170","TEAD4","R-HSA-74160","Gene expression (Transcription)",0.12850187001623
+"171","MEIS1","R-HSA-5619507","Activation of HOX genes during differentiation",0.00818573142332935
+"172","MEIS1","R-HSA-5617472","Activation of anterior HOX genes in hindbrain development during early embryogenesis",0.00818573142332935
+"173","MEIS1","R-HSA-1266738","Developmental Biology",0.0851033801425446
+"174","MEIS1","R-HSA-5619507","Activation of HOX genes during differentiation",0.00818573142332935
+"175","MEIS1","R-HSA-5617472","Activation of anterior HOX genes in hindbrain development during early embryogenesis",0.00818573142332935
+"176","MEIS1","R-HSA-1266738","Developmental Biology",0.0851033801425446
+"177","HLA-DQA2","R-HSA-877300","Interferon gamma signaling",0.000311228257537932
+"178","HLA-DQA2","R-HSA-913531","Interferon Signaling",0.000765193263460917
+"179","HLA-DQA2","R-HSA-202430","Translocation of ZAP-70 to Immunological synapse",0.00591881451055287
+"180","HLA-DQA2","R-HSA-202427","Phosphorylation of CD3 and TCR zeta chains",0.00634091472255605
+"181","HLA-DQA2","R-HSA-389948","PD-1 signaling",0.00634091472255605
+"182","HLA-DQA2","R-HSA-1280215","Cytokine Signaling in Immune system",0.0077185852782431
+"183","HLA-DQA2","R-HSA-202433","Generation of second messenger molecules",0.00816897987359566
+"184","HLA-DQA2","R-HSA-388841","Costimulation by the CD28 family",0.0136430765922135
+"185","HLA-DQA2","R-HSA-202424","Downstream TCR signaling",0.01742396211887
+"186","HLA-DQA2","R-HSA-202403","TCR signaling",0.0204993155941227
+"187","HLA-DQA2","R-HSA-2132295","MHC class II antigen presentation",0.0207786541594803
+"188","HLA-DQA2","R-HSA-168256","Immune System",0.0391241755980504
+"189","HLA-DQA2","R-HSA-1280218","Adaptive Immune System",0.135891280370693
+"190","ATP2B4","R-HSA-418359","Reduction of cytosolic Ca++ levels",0.00105849975301675
+"191","ATP2B4","R-HSA-418360","Platelet calcium homeostasis",0.00246983275703905
+"192","ATP2B4","R-HSA-5578775","Ion homeostasis",0.00451626561287133
+"193","ATP2B4","R-HSA-936837","Ion transport by P-type ATPases",0.0050102321642792
+"194","ATP2B4","R-HSA-418346","Platelet homeostasis",0.00867969797473711
+"195","ATP2B4","R-HSA-5576891","Cardiac conduction",0.0123491637851951
+"196","ATP2B4","R-HSA-983712","Ion channel transport",0.0146072965916308
+"197","ATP2B4","R-HSA-397014","Muscle contraction",0.0180650624514854
+"198","ATP2B4","R-HSA-109582","Hemostasis",0.0578646531649143
+"199","ATP2B4","R-HSA-382551","Transport of small molecules",0.0682379507444781
+"200","PLCB1","R-HSA-434316","Fatty Acids bound to GPR40 (FFAR1) regulate insulin secretion",0.00134076635382119
+"201","PLCB1","R-HSA-399997","Acetylcholine regulates insulin secretion",0.00134076635382119
+"202","PLCB1","R-HSA-418217","G beta:gamma signalling through PLC beta",0.00162303295462563
+"203","PLCB1","R-HSA-500657","Presynaptic function of Kainate receptors",0.00162303295462563
+"204","PLCB1","R-HSA-400451","Free fatty acids regulate insulin secretion",0.00190529955543006
+"205","PLCB1","R-HSA-451326","Activation of kainate receptors upon glutamate binding",0.00239926610683794
+"206","PLCB1","R-HSA-397795","G-protein beta:gamma signalling",0.00275209935784348
+"207","PLCB1","R-HSA-1855204","Synthesis of IP3 and IP4 in the cytosol",0.00275209935784348
+"208","PLCB1","R-HSA-112043","PLC beta mediated events",0.0049396655140781
+"209","PLCB1","R-HSA-112040","G-protein mediated events",0.0050102321642792
+"210","PLCB1","R-HSA-4086398","Ca2+ pathway",0.00564533201608919
+"211","PLCB1","R-HSA-1483249","Inositol phosphate metabolism",0.00635099851810039
+"212","PLCB1","R-HSA-422356","Regulation of insulin secretion",0.00748006492131814
+"213","PLCB1","R-HSA-111885","Opioid Signalling",0.0078328981723238
+"214","PLCB1","R-HSA-163685","Integration of energy metabolism",0.0101615976289605
+"215","PLCB1","R-HSA-3858494","Beta-catenin independent WNT signaling",0.0116434972831839
+"216","PLCB1","R-HSA-112314","Neurotransmitter receptors and postsynaptic signal transmission",0.0163008961964576
+"217","PLCB1","R-HSA-416476","G alpha (q) signalling events",0.0198997953567144
+"218","PLCB1","R-HSA-195721","Signaling by WNT",0.023286994566368
+"219","PLCB1","R-HSA-112315","Transmission across Chemical Synapses",0.0248394608707925
+"220","PLCB1","R-HSA-112316","Neuronal System",0.0351421918001552
+"221","PLCB1","R-HSA-418594","G alpha (i) signalling events",0.0400112906640322
+"222","PLCB1","R-HSA-388396","GPCR downstream signalling",0.0958295109731141
+"223","PLCB1","R-HSA-372790","Signaling by GPCR",0.104085809046645
+"224","PLCB1","R-HSA-162582","Signal Transduction",0.226660080445981
+"225","PLCB1","R-HSA-1430728","Metabolism",0.256792040081857
+"226","CDH4","R-HSA-525793","Myogenesis",0.00225813280643572
+"227","CDH4","R-HSA-418990","Adherens junctions interactions",0.00246983275703905
+"228","CDH4","R-HSA-421270","Cell-cell junction organization",0.00472796556347466
+"229","CDH4","R-HSA-446728","Cell junction organization",0.00663326511890483
+"230","CDH4","R-HSA-1500931","Cell-Cell communication",0.00938536447674831
+"231","CDH4","R-HSA-1266738","Developmental Biology",0.0851033801425446
+"232","ARRB1","R-HSA-5635838","Activation of SMO",0.0014113330040223
+"233","ARRB1","R-HSA-2122948","Activated NOTCH1 Transmits Signal to the Nucleus",0.00225813280643572
+"234","ARRB1","R-HSA-456926","Thrombin signalling through proteinase activated receptors (PARs)",0.00246983275703905
+"235","ARRB1","R-HSA-432720","Lysosome Vesicle Biogenesis",0.00303436595864792
+"236","ARRB1","R-HSA-6802948","Signaling by high-kinase activity BRAF mutants",0.00324606590925125
+"237","ARRB1","R-HSA-5674135","MAP2K and MAPK activation",0.00331663255945236
+"238","ARRB1","R-HSA-6802946","Signaling by moderate kinase activity BRAF mutants",0.00366946581045802
+"239","ARRB1","R-HSA-6802955","Paradoxical activation of RAF signaling by kinase inactive BRAF",0.00374003246065913
+"240","ARRB1","R-HSA-432722","Golgi Associated Vesicle Biogenesis",0.004304565662268
+"241","ARRB1","R-HSA-6802949","Signaling by RAS mutants",0.00458683226307244
+"242","ARRB1","R-HSA-6802952","Signaling by BRAF and RAF fusions",0.00508079881448031
+"243","ARRB1","R-HSA-199992","trans-Golgi Network Vesicle Budding",0.00564533201608919
+"244","ARRB1","R-HSA-1980143","Signaling by NOTCH1",0.00585703196669252
+"245","ARRB1","R-HSA-6802957","Oncogenic MAPK signaling",0.0064215651683015
+"246","ARRB1","R-HSA-5632684","Hedgehog 'on' state",0.00649213181850261
+"247","ARRB1","R-HSA-8856825","Cargo recognition for clathrin-mediated endocytosis",0.00811516477312824
+"248","ARRB1","R-HSA-8856828","Clathrin-mediated endocytosis",0.0113612306823795
+"249","ARRB1","R-HSA-5358351","Signaling by Hedgehog",0.0118551972337874
+"250","ARRB1","R-HSA-5689880","Ub-specific processing proteases",0.0145367299414296
+"251","ARRB1","R-HSA-157118","Signaling by NOTCH",0.0181356291016865
+"252","ARRB1","R-HSA-5673001","RAF/MAP kinase cascade",0.0193352621551055
+"253","ARRB1","R-HSA-5684996","MAPK1/MAPK3 signaling",0.0198292287065133
+"254","ARRB1","R-HSA-5688426","Deubiquitination",0.0203231952579211
+"255","ARRB1","R-HSA-76002","Platelet activation, signaling and aggregation",0.0206760285089267
+"256","ARRB1","R-HSA-9607240","FLT3 Signaling",0.0208171618093289
+"257","ARRB1","R-HSA-449836","Other interleukin signaling",0.0224401947639545
+"258","ARRB1","R-HSA-5683057","MAPK family signaling cascades",0.0234281278667702
+"259","ARRB1","R-HSA-5663202","Diseases of signal transduction",0.0345070919483452
+"260","ARRB1","R-HSA-418555","G alpha (s) signalling events",0.0426928233716746
+"261","ARRB1","R-HSA-199991","Membrane Trafficking",0.0469268223837415
+"262","ARRB1","R-HSA-109582","Hemostasis",0.0578646531649143
+"263","ARRB1","R-HSA-5653656","Vesicle-mediated transport",0.0581469197657187
+"264","ARRB1","R-HSA-449147","Signaling by Interleukins",0.0589937195681322
+"265","ARRB1","R-HSA-1280215","Cytokine Signaling in Immune system",0.0878554795003881
+"266","ARRB1","R-HSA-388396","GPCR downstream signalling",0.0958295109731141
+"267","ARRB1","R-HSA-372790","Signaling by GPCR",0.104085809046645
+"268","ARRB1","R-HSA-1643685","Disease",0.109731141062734
+"269","ARRB1","R-HSA-597592","Post-translational protein modification",0.112483240420577
+"270","ARRB1","R-HSA-392499","Metabolism of proteins",0.166184461223626
+"271","ARRB1","R-HSA-168256","Immune System",0.197798320513725
+"272","ARRB1","R-HSA-162582","Signal Transduction",0.226660080445981
+"273","TCRA","R-HSA-202430","Translocation of ZAP-70 to Immunological synapse",0.00296379930844681
+"274","TCRA","R-HSA-202427","Phosphorylation of CD3 and TCR zeta chains",0.00317549925905014
+"275","TCRA","R-HSA-389948","PD-1 signaling",0.00317549925905014
+"276","TCRA","R-HSA-202433","Generation of second messenger molecules",0.00409286571166467
+"277","TCRA","R-HSA-388841","Costimulation by the CD28 family",0.00684496506950816
+"278","TCRA","R-HSA-202424","Downstream TCR signaling",0.00875026462493822
+"279","TCRA","R-HSA-202403","TCR signaling",0.0103027309293627
+"280","TCRA","R-HSA-198933","Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell",0.0222990614635523
+"281","TCRA","R-HSA-1280218","Adaptive Immune System",0.0704255169007127
+"282","TCRA","R-HSA-168256","Immune System",0.197798320513725
+"283","CTSH","R-HSA-5683826","Surfactant metabolism",0.00374003246065913
+"284","CTSH","R-HSA-2132295","MHC class II antigen presentation",0.0104438642297651
+"285","CTSH","R-HSA-6798695","Neutrophil degranulation",0.0338719920965351
+"286","CTSH","R-HSA-1280218","Adaptive Immune System",0.0704255169007127
+"287","CTSH","R-HSA-168249","Innate Immune System",0.0934302448662762
+"288","CTSH","R-HSA-392499","Metabolism of proteins",0.166184461223626
+"289","CTSH","R-HSA-168256","Immune System",0.197798320513725
+"290","IL10RB","R-HSA-8854691","Interleukin-20 family signaling",0.00204643285583228
+"291","IL10RB","R-HSA-6783783","Interleukin-10 signaling",0.00606873191729584
+"292","IL10RB","R-HSA-449836","Other interleukin signaling",0.0224401947639545
+"293","IL10RB","R-HSA-449147","Signaling by Interleukins",0.0589937195681322
+"294","IL10RB","R-HSA-1280215","Cytokine Signaling in Immune system",0.0878554795003881
+"295","IL10RB","R-HSA-168256","Immune System",0.197798320513725
+"296","CCR1","R-HSA-6783783","Interleukin-10 signaling",3.68295070840574e-05
+"297","CCR1","R-HSA-449147","Signaling by Interleukins",0.00348025894848347
+"298","CCR1","R-HSA-380108","Chemokine receptors bind chemokines",0.00676292530082101
+"299","CCR1","R-HSA-1280215","Cytokine Signaling in Immune system",0.0077185852782431
+"300","CCR1","R-HSA-375276","Peptide ligand-binding receptors",0.0283057369561212
+"301","CCR1","R-HSA-168256","Immune System",0.0391241755980504
+"302","CCR1","R-HSA-373076","Class A/1 (Rhodopsin-like receptors)",0.0627748889349595
+"303","CCR1","R-HSA-418594","G alpha (i) signalling events",0.0784216779474627
+"304","CCR1","R-HSA-500792","GPCR ligand binding",0.0886898799690212
+"305","CCR1","R-HSA-388396","GPCR downstream signalling",0.182475726772882
+"306","CCR1","R-HSA-372790","Signaling by GPCR",0.197337762448395
+"307","CCR1","R-HSA-162582","Signal Transduction",0.401945368824184
+"308","HIST1H2AC","R-HSA-5689901","Metalloprotease DUBs",5.09916377144926e-06
+"309","HIST1H2AC","R-HSA-171306","Packaging Of Telomere Ends",5.75647785139299e-06
+"310","HIST1H2AC","R-HSA-73728","RNA Polymerase I Promoter Opening",5.75647785139299e-06
+"311","HIST1H2AC","R-HSA-5334118","DNA methylation",6.45362914830638e-06
+"312","HIST1H2AC","R-HSA-110330","Recognition and association of DNA glycosylase with site containing an affected purine",7.19061766218942e-06
+"313","HIST1H2AC","R-HSA-110328","Recognition and association of DNA glycosylase with site containing an affected pyrimidine",8.78410634075344e-06
+"314","HIST1H2AC","R-HSA-212300","PRC2 methylates histones and DNA",9.64060650554543e-06
+"315","HIST1H2AC","R-HSA-427359","SIRT1 negatively regulates rRNA expression",1.00837955442357e-05
+"316","HIST1H2AC","R-HSA-73927","Depurination",1.00837955442357e-05
+"317","HIST1H2AC","R-HSA-110331","Cleavage of the damaged purine",1.00837955442357e-05
+"318","HIST1H2AC","R-HSA-427389","ERCC6 (CSB) and EHMT2 (G9a) positively regulate rRNA expression",1.14731184859274e-05
+"319","HIST1H2AC","R-HSA-5625886","Activated PKN1 stimulates transcription of AR (androgen receptor) regulated genes KLK2 and KLK3",1.19561447415872e-05
+"320","HIST1H2AC","R-HSA-110329","Cleavage of the damaged pyrimidine ",1.29520751657175e-05
+"321","HIST1H2AC","R-HSA-73928","Depyrimidination",1.29520751657175e-05
+"322","HIST1H2AC","R-HSA-3214858","RMTs methylate histone arginines",1.39878428068174e-05
+"323","HIST1H2AC","R-HSA-606279","Deposition of new CENPA-containing nucleosomes at the centromere",1.45206655837171e-05
+"324","HIST1H2AC","R-HSA-774815","Nucleosome assembly",1.45206655837171e-05
+"325","HIST1H2AC","R-HSA-2299718","Condensation of Prophase Chromosomes",1.5063447664887e-05
+"326","HIST1H2AC","R-HSA-912446","Meiotic recombination",1.67515497336845e-05
+"327","HIST1H2AC","R-HSA-73929","Base-Excision Repair, AP Site Formation",1.85292855408026e-05
+"328","HIST1H2AC","R-HSA-5250924","B-WICH complex positively regulates rRNA expression",1.91417827516416e-05
+"329","HIST1H2AC","R-HSA-1221632","Meiotic synapsis",1.91417827516416e-05
+"330","HIST1H2AC","R-HSA-3214815","HDACs deacetylate histones",1.97642392666397e-05
+"331","HIST1H2AC","R-HSA-73772","RNA Polymerase I Promoter Escape",2.03966550860191e-05
+"332","HIST1H2AC","R-HSA-201722","Formation of the beta-catenin:TCF transactivating complex",2.2353658369445e-05
+"333","HIST1H2AC","R-HSA-2559586","DNA Damage/Telomere Stress Induced Senescence",2.51024263400179e-05
+"334","HIST1H2AC","R-HSA-9616222","Transcriptional regulation of granulopoiesis",2.51024263400179e-05
+"335","HIST1H2AC","R-HSA-8936459","RUNX1 regulates genes involved in megakaryocyte differentiation and platelet function",3.02962035018117e-05
+"336","HIST1H2AC","R-HSA-157579","Telomere Maintenance",3.02962035018117e-05
+"337","HIST1H2AC","R-HSA-5250913","Positive epigenetic regulation of rRNA expression",3.18697735718354e-05
+"338","HIST1H2AC","R-HSA-427413","NoRC negatively regulates rRNA expression",3.18697735718354e-05
+"339","HIST1H2AC","R-HSA-5625740","RHO GTPases activate PKNs",3.18697735718354e-05
+"340","HIST1H2AC","R-HSA-5578749","Transcriptional regulation by small RNAs",3.26714975632525e-05
+"341","HIST1H2AC","R-HSA-73854","RNA Polymerase I Promoter Clearance",3.76909869008735e-05
+"342","HIST1H2AC","R-HSA-977225","Amyloid fiber formation",3.85624260219597e-05
+"343","HIST1H2AC","R-HSA-5250941","Negative epigenetic regulation of rRNA expression",3.94438244473161e-05
+"344","HIST1H2AC","R-HSA-73864","RNA Polymerase I Transcription",3.94438244473161e-05
+"345","HIST1H2AC","R-HSA-1912408","Pre-NOTCH Transcription and Translation",3.94438244473161e-05
+"346","HIST1H2AC","R-HSA-2559582","Senescence-Associated Secretory Phenotype (SASP)",3.94438244473161e-05
+"347","HIST1H2AC","R-HSA-1500620","Meiosis",4.21477755487842e-05
+"348","HIST1H2AC","R-HSA-5689603","UCH proteinases",4.7824578966349e-05
+"349","HIST1H2AC","R-HSA-73884","Base Excision Repair",4.7824578966349e-05
+"350","HIST1H2AC","R-HSA-73886","Chromosome Maintenance",5.49006646296535e-05
+"351","HIST1H2AC","R-HSA-8939236","RUNX1 regulates transcription of genes involved in differentiation of HSCs",5.59513712271587e-05
+"352","HIST1H2AC","R-HSA-3214847","HATs acetylate histones",6.02537906593259e-05
+"353","HIST1H2AC","R-HSA-1912422","Pre-NOTCH Expression and Processing",6.35851779280383e-05
+"354","HIST1H2AC","R-HSA-2559580","Oxidative Stress Induced Senescence",6.47155589593718e-05
+"355","HIST1H2AC","R-HSA-5617472","Activation of anterior HOX genes in hindbrain development during early embryogenesis",6.70061989348492e-05
+"356","HIST1H2AC","R-HSA-5619507","Activation of HOX genes during differentiation",6.70061989348492e-05
+"357","HIST1H2AC","R-HSA-211000","Gene Silencing by RNA",6.81664578789931e-05
+"358","HIST1H2AC","R-HSA-1474165","Reproduction",7.53371569326422e-05
+"359","HIST1H2AC","R-HSA-68875","Mitotic Prophase",9.07541598980099e-05
+"360","HIST1H2AC","R-HSA-212165","Epigenetic regulation of gene expression",9.62118586221861e-05
+"361","HIST1H2AC","R-HSA-9018519","Estrogen-dependent gene expression",0.000118097429692265
+"362","HIST1H2AC","R-HSA-2559583","Cellular Senescence",0.000195222281736296
+"363","HIST1H2AC","R-HSA-5689880","Ub-specific processing proteases",0.000211316517390037
+"364","HIST1H2AC","R-HSA-201681","TCF dependent signaling in response to WNT",0.00023233064933903
+"365","HIST1H2AC","R-HSA-8939211","ESR-mediated signaling",0.000323801879142493
+"366","HIST1H2AC","R-HSA-3247509","Chromatin modifying enzymes",0.000326346481376083
+"367","HIST1H2AC","R-HSA-4839726","Chromatin organization",0.000326346481376083
+"368","HIST1H2AC","R-HSA-157118","Signaling by NOTCH",0.000328901042913943
+"369","HIST1H2AC","R-HSA-8878171","Transcriptional regulation by RUNX1",0.000339218882107861
+"370","HIST1H2AC","R-HSA-5688426","Deubiquitination",0.000413032265491609
+"371","HIST1H2AC","R-HSA-9006931","Signaling by Nuclear Receptors",0.000500400261947642
+"372","HIST1H2AC","R-HSA-195258","RHO GTPase Effectors",0.000529217508769553
+"373","HIST1H2AC","R-HSA-195721","Signaling by WNT",0.000542284115934044
+"374","HIST1H2AC","R-HSA-73894","DNA Repair",0.000670704364472363
+"375","HIST1H2AC","R-HSA-68886","M Phase",0.000757405087544294
+"376","HIST1H2AC","R-HSA-194315","Signaling by Rho GTPases",0.00103999536573651
+"377","HIST1H2AC","R-HSA-2262752","Cellular responses to stress",0.0013207282336879
+"378","HIST1H2AC","R-HSA-69278","Cell Cycle, Mitotic",0.00161788897398507
+"379","HIST1H2AC","R-HSA-8953897","Cellular responses to external stimuli",0.00192035802344281
+"380","HIST1H2AC","R-HSA-1640170","Cell Cycle",0.00231615571294497
+"381","HIST1H2AC","R-HSA-1266738","Developmental Biology",0.00724258531168642
+"382","HIST1H2AC","R-HSA-212436","Generic Transcription Pathway",0.0115656205036698
+"383","HIST1H2AC","R-HSA-597592","Post-translational protein modification",0.0126524793755134
+"384","HIST1H2AC","R-HSA-73857","RNA Polymerase II Transcription",0.0137715715355337
+"385","HIST1H2AC","R-HSA-74160","Gene expression (Transcription)",0.0165127305976681
+"386","HIST1H2AC","R-HSA-392499","Metabolism of proteins",0.0276172751521868
+"387","HIST1H2AC","R-HSA-162582","Signal Transduction",0.0513747920677787
+"388","A1CF","R-HSA-75094","Formation of the Editosome",0.000564533201608874
+"389","A1CF","R-HSA-72200","mRNA Editing: C to U Conversion",0.000705666502011204
+"390","A1CF","R-HSA-75072","mRNA Editing",0.000846799802413423
+"391","A1CF","R-HSA-8953854","Metabolism of RNA",0.0551831204572719
+"392","TCRA","R-HSA-202430","Translocation of ZAP-70 to Immunological synapse",0.00296379930844681
+"393","TCRA","R-HSA-202427","Phosphorylation of CD3 and TCR zeta chains",0.00317549925905014
+"394","TCRA","R-HSA-389948","PD-1 signaling",0.00317549925905014
+"395","TCRA","R-HSA-202433","Generation of second messenger molecules",0.00409286571166467
+"396","TCRA","R-HSA-388841","Costimulation by the CD28 family",0.00684496506950816
+"397","TCRA","R-HSA-202424","Downstream TCR signaling",0.00875026462493822
+"398","TCRA","R-HSA-202403","TCR signaling",0.0103027309293627
+"399","TCRA","R-HSA-198933","Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell",0.0222990614635523
+"400","TCRA","R-HSA-1280218","Adaptive Immune System",0.0704255169007127
+"401","TCRA","R-HSA-168256","Immune System",0.197798320513725
+"402","CRAT","R-HSA-389887","Beta-oxidation of pristanoyl-CoA",0.00218756615623461
+"403","CRAT","R-HSA-9033241","Peroxisomal protein import",0.00472796556347466
+"404","CRAT","R-HSA-390918","Peroxisomal lipid metabolism",0.00635099851810039
+"405","CRAT","R-HSA-9609507","Protein localization",0.0119963305341896
+"406","CRAT","R-HSA-8978868","Fatty acid metabolism",0.0302730929362783
+"407","CRAT","R-HSA-556833","Metabolism of lipids",0.10189824289041
+"408","CRAT","R-HSA-1430728","Metabolism",0.256792040081857

@@ -16,29 +16,36 @@ Análisis exploratorio de datos
 ```r
 # devtools::install_github("Erickcufe/seekerBio")
 
-# cocaine <- seekerBio::seeker_gwas("Cocaine")
+# sleep_disorder <- seekerBio::seeker_gwas("Sleep Disorder")
 
-# write.csv(cocaine, "Clase_3/Cocaine.csv")
+# write.csv(sleep_disorder, "Clase_3/sleep_disorder.csv")
 
-# paths <- seekerBio::seeker_gen_pathway(cocaine$GeneSymbol)
+# paths <- seekerBio::seeker_gen_pathway(sleep_disorder$GeneSymbol)
 
-# write.csv(paths, "Clase_3/Paths_cocaine.csv")
+# write.csv(paths, "Clase_3/Paths_sleep.csv")
 
-# Freq <- seekerBio::seeker_snp_freq(cocaine$SNPS)
+# Freq <- seekerBio::seeker_snp_freq(sleep_disorder$SNPS)
 
-# write.csv(Freq, "Clase_3/Freq_cocaine.csv")
+# write.csv(Freq, "Clase_3/Freq_sleep.csv")
 ```
 
 Para afianzar lo aprendido en la clase anterior:
 
-- Lee/carga el archivo *Cocaine.csv*
-- Lee/carga el archivo *Paths_cocaine.csv*
-- Lee/carga el archivo *Freq_cocaine.csv*
+- Lee/carga el archivo *sleep_disorder.csv*
+- Lee/carga el archivo *Paths_sleep.csv*
+- Lee/carga el archivo *Freq_sleep.csv*
+- Lee/carga el archivo de la carpeta **Seccion_nutricion**: *Cuestionario_de_Problemas_de_Suenno*
 
+Recuerda que con **foreing::read.dta(file.dta)** tambien lo puedes hacer
 
 Para calentar motores...  Missing Values
 ========================================================
 Un vistazo a los datos
+
+
+
+
+
 
 
 
