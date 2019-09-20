@@ -44,7 +44,7 @@ HOY VAMOS A TRABAJAR EN UN R Script
 - Realiza un grafico de barras con alguna variable de archivo *ENSANUT*
 - Realiza un grafico de distribucion de las frecuencias alelicas en poblacion EUROPEA y AMERICANA del archivo *freq_ordered*
 - Realiza un grafico boxplot de alguna variable del archivo *ENSANUT*
-- Realiza un grafico de lineas con las frecuencias alelicas de todo el mundo del archivo *freq_ordered*
+- Realiza un grafico de lineas con las frecuencias alelicas de todo el mundo del archivo *freq_ordered* de un solo SNP
 
 TUNEANDO LOS GRAFICOS
 ========================================================
