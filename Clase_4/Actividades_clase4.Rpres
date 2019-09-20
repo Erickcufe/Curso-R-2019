@@ -37,6 +37,7 @@ RECUERDA
 - No es tan obvio el problema, habra ocasiones en las que deberan hacer mas con sus datos para poder lograr los graficos que se piden.
 
 ```{r}
+freq_ordered$X <- NULL
 one_snp <- freq_ordered[1,]
 one_snp <- data.frame(t(one_snp))
 SNP <- one_snp[1,]

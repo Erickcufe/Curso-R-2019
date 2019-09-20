@@ -37,6 +37,7 @@ RECUERDA
 
 
 ```r
+freq_ordered$X <- NULL
 one_snp <- freq_ordered[1,]
 one_snp <- data.frame(t(one_snp))
 SNP <- one_snp[1,]
