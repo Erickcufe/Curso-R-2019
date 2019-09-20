@@ -265,9 +265,9 @@ head(most_populated,3)
 
 ```
   Rank Country / Territory    Population              Date
-1    1       China[note 4] 1,385,310,000 September 9, 2017
-2    2               India 1,321,010,000 September 9, 2017
-3    3       United States   325,732,000 September 9, 2017
+1    1       China[note 4] 1,385,310,000 September 9, 2017
+2    2               India 1,321,010,000 September 9, 2017
+3    3       United States   325,732,000 September 9, 2017
   Approx. % of world\npopulation Source
 1                          18.3%   [91]
 2                          17.5%   [92]
@@ -281,16 +281,16 @@ custom_table
 
 ```
    Rank Country / Territory    Population              Date
-1     1       China[note 4] 1,385,310,000 September 9, 2017
-2     2               India 1,321,010,000 September 9, 2017
-3     3       United States   325,732,000 September 9, 2017
-4     4           Indonesia   261,600,000  October 31, 2016
-5     5            Pakistan   208,848,000 September 9, 2017
-6     6              Brazil   207,985,000 September 9, 2017
-7     7             Nigeria   188,500,000  October 31, 2016
-8     8          Bangladesh   163,106,000 September 9, 2017
-9     9              Russia   146,773,226      June 1, 2017
-10   10               Japan   126,750,000      July 1, 2017
+1     1       China[note 4] 1,385,310,000 September 9, 2017
+2     2               India 1,321,010,000 September 9, 2017
+3     3       United States   325,732,000 September 9, 2017
+4     4           Indonesia   261,600,000  October 31, 2016
+5     5            Pakistan   208,848,000 September 9, 2017
+6     6              Brazil   207,985,000 September 9, 2017
+7     7             Nigeria   188,500,000  October 31, 2016
+8     8          Bangladesh   163,106,000 September 9, 2017
+9     9              Russia   146,773,226      June 1, 2017
+10   10               Japan   126,750,000      July 1, 2017
    Approx. % of world\npopulation Source
 1                           18.3%   [91]
 2                           17.5%   [92]

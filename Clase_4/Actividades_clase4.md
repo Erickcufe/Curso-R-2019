@@ -10,6 +10,7 @@ Cargamos datos de la clase pasada y cargamos archivos nuevos de la carpeta *clas
 
 
 ```r
+library(ggplot2)
 # ensanut <- read.csv("Seccion_Nutricion/Cuestionario_de_Problemas_de_Suenno/ensanut_suenno_16112016.csv")
 # gwas_sleep <- read.csv("Clase_3/sleep_disorder.csv")
 # paths <- read.csv("Clase_3/Paths_sleep.csv")
@@ -17,7 +18,7 @@ Cargamos datos de la clase pasada y cargamos archivos nuevos de la carpeta *clas
 # write.csv(freq, "Clase_4/Freq.csv")
 # freqs_ordered <- seekerBio::seeker_snp_freq_format(freq)
 # write.csv(freqs_ordered, "Clase_4/freq_format.csv")
-# freq_ordered <- read.csv("Clase_4/Freq.csv")
+freq_ordered <- read.csv("/home/erick/Curso-R-2019/Clase_4/freq_format.csv")
 ```
 
 
@@ -32,6 +33,27 @@ RECUERDA
 - Observa de que variables se componen y de que tipo (numerico, factor, caracter).  *summary()*
 - Si hay necesidad cambia el tipo de dato
 - Limpia los datos antes de iniciar
+- No es tan obvio el problema, habra ocasiones en las que deberan hacer mas con sus datos para poder lograr los graficos que se piden.
+
+
+```r
+one_snp <- freq_ordered[1,]
+one_snp <- data.frame(t(one_snp))
+SNP <- one_snp[1,]
+one_snp_final <- data.frame(freq = one_snp[c(-1,-66,-67),], SNP = SNP)
+one_snp_final$freq <- as.character(one_snp_final$freq)
+one_snp_final$freq <- as.numeric(one_snp_final$freq)
+one_snp_final$pop <- row.names(one_snp_final)
+
+ggplot(one_snp_final, aes(x= pop, y= freq, color=SNP)) +
+  geom_point() + theme_bw() + theme(axis.text.x = element_text(angle = 90)) +
+  geom_hline(yintercept=0.5, linetype="dashed", 
+             color = "red", size=1)
+```
+
+![plot of chunk unnamed-chunk-2](Actividades_clase4-figure/unnamed-chunk-2-1.png)
+
+![plot_1](Clase_4/plot_example.png)
 
 HOY VAMOS A TRABAJAR EN UN R Script
 ========================================================
@@ -42,7 +64,9 @@ HOY VAMOS A TRABAJAR EN UN R Script
 - Realiza un grafico de barras con alguna variable de archivo *ENSANUT*
 - Realiza un grafico de distribucion de las frecuencias alelicas en poblacion EUROPEA y AMERICANA del archivo *freq_ordered*
 - Realiza un grafico boxplot de alguna variable del archivo *ENSANUT*
-- Realiza un grafico de lineas con las frecuencias alelicas de todo el mundo del archivo *freq_ordered* de un solo SNP
+- Realiza un grafico de puntos con las frecuencias alelicas de todo el mundo del archivo *freq_ordered* de un solo SNP
+
+
 
 TUNEANDO LOS GRAFICOS
 ========================================================
