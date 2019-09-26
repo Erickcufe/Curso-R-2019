@@ -186,6 +186,6 @@ magia_oscura <- function(df){
 Ejercicio AVANZADO
 ========================================================
 
-Genera un funcion en la que el usuario seleccione el nombre de las columnas que quiere cambiar, y basado en ello, del archivo *catalogo_respuestas_Cuestionario de Problemas de Suenno* obtenga las respuestas, y de esto modo automaticamente cambie los numeros por respuestas. 
+Genera una funcion en la que el usuario seleccione el nombre de las columnas que quiere cambiar, y basado en ello, del archivo *catalogo_respuestas_Cuestionario de Problemas de Suenno* obtenga las respuestas, y de esto modo automaticamente cambie los numeros por respuestas. 
 
 
